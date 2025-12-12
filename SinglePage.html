@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Trainings</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
+        .top-header { background-color: #003366; padding: 10px 0; }
+        .header-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; color: white; cursor: pointer; text-decoration: none; }
+        .logo:hover { opacity: 0.9; }
+        .search-box { flex: 1; max-width: 600px; margin: 0 40px; }
+        .search-box input { width: 100%; padding: 10px 15px; border: none; border-radius: 4px; font-size: 14px; }
+        .main-nav { background-color: white; border-bottom: 1px solid #ddd; }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; }
+        .nav-container a { color: #003366; text-decoration: none; padding: 15px 0; font-weight: 500; display: inline-block; cursor: pointer; }
+        .nav-container a:hover { color: #0066cc; }
+        .sub-nav { background-color: #1a2c4d; padding: 20px 0; }
+        .breadcrumb { background-color: #f9f9f9; padding: 15px 0; border-bottom: 1px solid #ddd; }
+        .breadcrumb-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+        .breadcrumb a { color: #0066cc; text-decoration: none; cursor: pointer; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: #666; margin: 0 8px; }
+        .content-wrapper { max-width: 1400px; margin: 30px auto; padding: 0 20px; display: flex; gap: 30px; }
+        .products-container { flex: 1; }
+        .products-header { background-color: #1a2c4d; color: white; padding: 15px 20px; border-radius: 4px; margin-bottom: 20px; }
+        .filters-sidebar { width: 280px; flex-shrink: 0; }
+        .filter-card { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .filter-card h3 { color: #003366; font-size: 16px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #0066cc; }
+        .filter-group { margin-bottom: 12px; }
+        .filter-checkbox { display: flex; align-items: center; gap: 8px; padding: 8px 0; cursor: pointer; }
+        .filter-checkbox input[type="checkbox"] { cursor: pointer; width: 18px; height: 18px; }
+        .filter-checkbox label { cursor: pointer; color: #333; font-size: 14px; flex: 1; }
+        .filter-count { color: #999; font-size: 13px; }
+        .clear-filters { background: none; border: none; color: #0066cc; cursor: pointer; font-size: 14px; text-decoration: underline; padding: 10px 0; }
+        .clear-filters:hover { color: #0052a3; }
+        .product-card { background: white; padding: 20px; border-radius: 4px; margin-bottom: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
+        .product-info h3 { color: #003366; margin-bottom: 10px; font-size: 18px; }
+        .product-meta { display: flex; gap: 15px; color: #666; font-size: 14px; }
+        .view-details-btn { background-color: #0066cc; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 500; white-space: nowrap; }
+        .view-details-btn:hover { background-color: #0052a3; }
+        .back-link { display: inline-block; color: #0066cc; text-decoration: none; margin-bottom: 20px; font-size: 14px; cursor: pointer; }
+        .back-link:hover { text-decoration: underline; }
+        .course-header { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .course-title { color: #003366; font-size: 32px; margin-bottom: 15px; }
+        .course-meta { display: flex; gap: 20px; color: #666; font-size: 14px; margin-bottom: 20px; }
+        .course-meta span { display: flex; align-items: center; gap: 5px; }
+        .course-tags { display: flex; gap: 10px; flex-wrap: wrap; }
+        .tag { background-color: #e6f2ff; color: #003366; padding: 6px 12px; border-radius: 20px; font-size: 13px; }
+        .content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        .main-content { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .sidebar-info { display: flex; flex-direction: column; gap: 20px; }
+        .info-card { background: white; padding: 25px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .info-card h3 { color: #003366; margin-bottom: 15px; font-size: 18px; }
+        .info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+        .info-row:last-child { border-bottom: none; }
+        .info-label { color: #666; font-weight: 500; }
+        .info-value { color: #333; text-align: right; }
+        .section { margin-bottom: 30px; }
+        .section h2 { color: #003366; font-size: 24px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #0066cc; }
+        .section p { color: #333; line-height: 1.6; margin-bottom: 15px; }
+        .section ul { color: #333; line-height: 1.8; margin-left: 20px; }
+        .section li { margin-bottom: 8px; }
+        .cta-button { width: 100%; background-color: #0066cc; color: white; border: none; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 15px; }
+        .cta-button:hover { background-color: #0052a3; }
+        .secondary-button { width: 100%; background-color: white; color: #0066cc; border: 2px solid #0066cc; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 10px; }
+        .secondary-button:hover { background-color: #f0f7ff; }
+        .price { font-size: 28px; color: #003366; font-weight: bold; margin: 15px 0; }
+        .schedule-list { list-style: none; margin-left: 0; }
+        .schedule-item { padding: 15px; background-color: #f9f9f9; margin-bottom: 10px; border-radius: 4px; border-left: 3px solid #0066cc; }
+        .schedule-date { font-weight: 600; color: #003366; margin-bottom: 5px; }
+        .schedule-location { color: #666; font-size: 14px; }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="header-container">
+            <a onclick="showHome()" class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="white"/>
+                    <text x="20" y="26" text-anchor="middle" font-size="20" fill="#003366" font-weight="bold">DT</text>
+                </svg>
+                <span style="font-size: 24px; font-weight: bold; margin-left: 10px;">Demo Trainings</span>
+            </a>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Buscar cursos, entrenamientos y más" oninput="searchCourses()">
+            </div>
+        </div>
+    </div>
+
+    <div id="page-home" class="page-section active">
+        <div class="main-nav">
+            <div class="nav-container">
+                <a onclick="showHome()">Buscar Entrenamientos</a>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <aside class="filters-sidebar">
+                <div class="filter-card">
+                    <h3>Categoría</h3>
+                    <div class="filter-group" id="category-filters">
+                        <!-- Filtros de categoría se generarán dinámicamente -->
+                    </div>
+                </div>
+
+                <div class="filter-card">
+                    <h3>Otros Entrenamientos</h3>
+                    <div style="padding: 10px 0; color: #333; line-height: 1.6;">
+                        <p style="margin-bottom: 8px; font-size: 14px;">¿Estás buscando entrenamientos virtuales?</p>
+                        <p style="margin-bottom: 15px; font-size: 13px; color: #666;">Visita nuestra plataforma de capacitación digital haciendo clic en el siguiente botón.</p>
+                    </div>
+                    <button class="secondary-button" style="margin-top: 10px;" onclick="window.open('https://sites.google.com/view/entrenamientosdigitales', '_blank')">Ir a Entrenamientos Virtuales</button>
+                </div>
+
+                <button class="clear-filters" onclick="clearAllFilters()">Limpiar Filtros</button>
+            </aside>
+
+            <main class="products-container" style="flex: 1;">
+                <div class="products-header"><span id="results-count">0</span> cursos disponibles</div>
+                <div id="courses-list">
+                    <!-- Los cursos se cargarán aquí dinámicamente -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div id="page-details" class="page-section">
+        <div class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a onclick="showHome()">Buscar Entrenamientos</a>
+                <span>›</span>
+                <a onclick="showHome()" id="breadcrumb-category">Categoría</a>
+                <span>›</span>
+                <span id="breadcrumb-title">Título del Curso</span>
+            </div>
+        </div>
+
+        <div class="content-wrapper" style="display: block;">
+            <a onclick="showHome()" class="back-link">← Volver a Todos los Entrenamientos</a>
+
+            <div class="course-header">
+                <h1 class="course-title" id="course-title">Título del Curso</h1>
+                <div class="course-meta" id="course-meta"></div>
+                <div class="course-tags" id="course-tags"></div>
+            </div>
+
+            <div class="content-grid">
+                <div class="main-content">
+                    <div class="section" id="section-overview"></div>
+                    <div class="section" id="section-learnings"></div>
+                    <div class="section" id="section-audience"></div>
+                    <div class="section" id="section-prerequisites"></div>
+                    <div class="section" id="section-topics"></div>
+                </div>
+
+                <aside class="sidebar-info">
+                    <div class="info-card" id="card-information"></div>
+                    <div class="info-card" id="card-schedules"></div>
+                    <div class="info-card" id="card-instructor"></div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const coursesData = {
+            'FE1-101': {
+                id: 'FE1-101',
+                title: 'Separadores',
+                category: 'Facilidades de Superficie',
+                program: 'Facilidades de superficie (FE1) - Fase 1',
+                programCode: 'FE1 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'FE1 101',
+                overview: ['Este curso proporciona conocimientos fundamentales sobre el funcionamiento y mantenimiento de separadores en facilidades de producción de petróleo y gas.'],
+                learnings: ['Principios de funcionamiento', 'Variables de proceso a controlar', 'Salvaguardas típicas de estos sistemas', 'Mantenimiento', 'Tratadores y emulsiones'],
+                whoShouldAttend: ['Operadores de producción', 'Técnicos de mantenimiento', 'Personal de facilidades de superficie'],
+                prerequisites: 'Ninguno',
+                topics: ['Principios de funcionamiento', 'Variables de proceso a controlar', 'Salvaguardas típicas de estos sistemas', 'Mantenimiento', 'Tratadores y emulsiones'],
+                instructor: { name: 'Instructor Certificado', bio: 'Experto en operaciones de facilidades de superficie con amplia experiencia en la industria petrolera.' },
+                tags: ['Separadores', 'Operaciones', 'Facilidades']
+            },
+            'FE1-104': {
+                id: 'FE1-104',
+                title: 'Válvulas de Control',
+                category: 'Facilidades de Superficie',
+                program: 'Facilidades de superficie (FE1) - Fase 1',
+                programCode: 'FE1 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'FE1 104',
+                overview: ['Curso completo sobre válvulas de control, su funcionamiento, tipos y procedimientos de mantenimiento preventivo.'],
+                learnings: ['Introducción', 'Principios de funcionamiento de las válvulas de control', 'Tipos de válvulas de control', 'Procedimientos de mantenimiento preventivo de válvulas de control'],
+                whoShouldAttend: ['Técnicos de instrumentación', 'Operadores', 'Personal de mantenimiento'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Especialista en instrumentación y control de procesos.' },
+                tags: ['Válvulas', 'Control', 'Instrumentación']
+            },
+            'FE1-108': {
+                id: 'FE1-108',
+                title: 'Instrumentación',
+                category: 'Facilidades de Superficie',
+                program: 'Facilidades de superficie (FE1) - Fase 1',
+                programCode: 'FE1 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'FE1 108',
+                overview: ['Fundamentos de instrumentación industrial, medición de variables de proceso y lectura de diagramas P&ID.'],
+                learnings: ['Definición e instrumentación', 'Variables y lazos de control', 'Medición y escalas', 'Factores de medición', 'Medidores', 'Simbología de instrumentación', 'Lectura de planos P&ID'],
+                whoShouldAttend: ['Operadores', 'Técnicos', 'Ingenieros de proceso'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Ingeniero con experiencia en sistemas de control e instrumentación.' },
+                tags: ['Instrumentación', 'Medición', 'P&ID']
+            },
+            'FE2-101': {
+                id: 'FE2-101',
+                title: 'Bombas',
+                category: 'Facilidades de Superficie',
+                program: 'Operaciones de superficie (FE2) - Fase 1',
+                programCode: 'FE2 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'FE2 101',
+                overview: ['Curso completo sobre bombas industriales, sus tipos, principios de operación, mantenimiento y solución de problemas.'],
+                learnings: ['Tipos de bombas', 'Succión y descarga de las bombas', 'Bombas Booster', 'Bombas de desplazamiento positivo', 'Bombas centrífugas', 'Principios de funcionamiento', 'Parámetros de operación y control', 'Sistemas de seguridad', 'Problemas comunes y soluciones', 'Mantenimiento y cuidado'],
+                whoShouldAttend: ['Operadores de bombas', 'Técnicos de mantenimiento', 'Personal de producción'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Especialista en equipos rotativos y sistemas de bombeo.' },
+                tags: ['Bombas', 'Equipos Rotativos', 'Mantenimiento']
+            },
+            'SS-101': {
+                id: 'SS-101',
+                title: 'Sistemas de Levantamiento Artificial (BES/BCP/BM)',
+                category: 'Subsuelo',
+                program: 'Subsuelo (SS) - Fase 1',
+                programCode: 'SS 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'SS 101',
+                overview: ['Introducción completa a los sistemas de levantamiento artificial utilizados en la producción de petróleo.'],
+                learnings: ['Introducción al Sistema de Levantamiento Artificial', 'Bombeo Electrosumergible (BES)', 'Bomba de Cavidad Progresiva (BCP)', 'Bombeo Mecánico (BM / ROD PUMP)'],
+                whoShouldAttend: ['Operadores de producción', 'Ingenieros de producción', 'Personal de subsuelo'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Ingeniero de producción con experiencia en sistemas de levantamiento artificial.' },
+                tags: ['Levantamiento Artificial', 'BES', 'BCP', 'Bombeo Mecánico']
+            },
+            'SS-103': {
+                id: 'SS-103',
+                title: 'Cabezales de Pozo',
+                category: 'Subsuelo',
+                program: 'Subsuelo (SS) - Fase 1',
+                programCode: 'SS 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'SS 103',
+                overview: ['Curso sobre cabezales de pozo, árboles de navidad, y su mantenimiento en operaciones de producción.'],
+                learnings: ['Revestidores', 'Cabezal de pozo', 'Árbol de Navidad', 'Problemas Comunes & Soluciones', 'Cabezal de Rotación - Función', 'Mantenimiento'],
+                whoShouldAttend: ['Operadores de pozo', 'Personal de intervención', 'Técnicos de campo'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Especialista en completación y operaciones de pozos.' },
+                tags: ['Cabezales', 'Pozos', 'Árboles de Navidad']
+            },
+            'HSE-101': {
+                id: 'HSE-101',
+                title: 'Conceptos Básicos Excelencia Operacional',
+                category: 'HSE',
+                program: 'HSE - Fase 1',
+                programCode: 'HSE 100',
+                format: 'Presencial',
+                duration: '8 horas',
+                courseCode: 'HSE 101',
+                overview: ['Fundamentos de la excelencia operacional, cultura de seguridad y principios operacionales.'],
+                learnings: ['Sentido de vulnerabilidad', 'Autoridad para detener el trabajo', 'Principios operacionales', 'EPPs', 'Importancia de la seguridad de procesos', 'Lista de Verificación para el Inicio del Trabajo (VIT)', 'Rueda de identificación de peligros'],
+                whoShouldAttend: ['Todo el personal operativo', 'Supervisores', 'Contratistas'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Especialista en HSE y excelencia operacional.' },
+                tags: ['Seguridad', 'OE', 'Cultura de Seguridad']
+            },
+            'HSE-103': {
+                id: 'HSE-103',
+                title: 'Análisis de Riesgo en el Trabajo (A.R.T)',
+                category: 'HSE',
+                program: 'HSE - Fase 1',
+                programCode: 'HSE 100',
+                format: 'Presencial',
+                duration: '4 horas',
+                courseCode: 'HSE 103',
+                overview: ['Metodología para realizar análisis de riesgos en el trabajo según normas PDVSA.'],
+                learnings: ['Métodos de Análisis de Riesgo en el Trabajo (ART)', 'Metodología Norma PDVSA IR-S-17', 'Proceso del Análisis de Riesgos en el Trabajo', 'Responsabilidades', 'Anexo A', 'Actividad grupal'],
+                whoShouldAttend: ['Supervisores', 'Personal operativo', 'Coordinadores HSE'],
+                prerequisites: 'HSE 101',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Experto en gestión de riesgos y seguridad industrial.' },
+                tags: ['ART', 'Riesgos', 'Seguridad']
+            },
+            'HSE-105': {
+                id: 'HSE-105',
+                title: 'Trabajo en Altura: Escaleras y Andamios y Uso de Arnés',
+                category: 'HSE',
+                program: 'HSE - Fase 1',
+                programCode: 'HSE 100',
+                format: 'Presencial',
+                duration: '5 horas',
+                courseCode: 'HSE 105',
+                overview: ['Seguridad en trabajos en altura, uso correcto de equipos de protección y procedimientos seguros.'],
+                learnings: ['Seguridad en Escaleras Portátiles, Fijas', 'Roles y responsabilidades', 'Riesgos comunes', 'Sistemas de protección', 'Anclajes', 'Caída Libre', 'VIT', 'Inspección', 'Andamios: tipos, partes, condiciones, montaje'],
+                whoShouldAttend: ['Personal que trabaja en altura', 'Supervisores', 'Personal de mantenimiento'],
+                prerequisites: 'HSE 101',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Especialista certificado en trabajo en altura y rescate.' },
+                tags: ['Altura', 'Andamios', 'Arnés', 'Seguridad']
+            },
+            'LW-101': {
+                id: 'LW-101',
+                title: 'Leadership Workshop Phase 1',
+                category: 'Liderazgo',
+                program: 'Liderazgo',
+                programCode: 'LW 100',
+                format: 'Presencial',
+                duration: '16 horas',
+                courseCode: 'LW 101',
+                overview: ['Taller de liderazgo enfocado en excelencia operacional, seguridad y desarrollo de habilidades de liderazgo.'],
+                learnings: ['Expectativas', 'El estado actual de la seguridad en Latino América y en Venezuela', 'Sistemas, Escenarios de alto riesgo y definir las Salvaguardas', 'Qué es, cómo y cuándo se aplica la Autoridad para detener el Trabajo', 'VIT', 'Técnicas de coaching', 'Prácticas de comunicación'],
+                whoShouldAttend: ['Supervisores', 'Líderes de equipo', 'Gerentes operacionales'],
+                prerequisites: 'Ninguno',
+                topics: [],
+                instructor: { name: 'Instructor Certificado', bio: 'Coach ejecutivo con experiencia en liderazgo operacional.' },
+                tags: ['Liderazgo', 'Coaching', 'Comunicación']
+            }
+        };
+
+        // Renderizar filtros dinámicamente
+        function renderFilters() {
+            const categories = new Set();
+            
+            Object.values(coursesData).forEach(course => {
+                categories.add(course.category);
+            });
+            
+            // Renderizar filtros de categoría
+            const categoryFiltersContainer = document.getElementById('category-filters');
+            categoryFiltersContainer.innerHTML = '';
+            Array.from(categories).sort().forEach(category => {
+                const filterId = 'filter-' + category.toLowerCase().replace(/\s+/g, '-');
+                const filterDiv = document.createElement('div');
+                filterDiv.className = 'filter-checkbox';
+                filterDiv.innerHTML = `
+                    <input type="checkbox" id="${filterId}" value="${category}" onchange="applyFilters()">
+                    <label for="${filterId}">${category}</label>
+                    <span class="filter-count" id="count-${filterId}">(0)</span>
+                `;
+                categoryFiltersContainer.appendChild(filterDiv);
+            });
+        }
+
+        // Renderizar cursos al cargar la página
+        function renderCourses() {
+            const coursesList = document.getElementById('courses-list');
+            coursesList.innerHTML = '';
+            
+            Object.values(coursesData).forEach(course => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.dataset.category = course.category;
+                card.dataset.format = course.format;
+                
+                card.innerHTML = `
+                    <div class="product-info">
+                        <h3>${course.title}</h3>
+                        <div class="product-meta">
+                            <span>📚 ${course.category}</span>
+                            <span>|</span>
+                            <span>${course.duration}</span>
+                        </div>
+                    </div>
+                    <button class="view-details-btn" onclick="showDetails('${course.id}')">Ver Detalles</button>
+                `;
+                
+                coursesList.appendChild(card);
+            });
+            
+            updateFilterCounts();
+            document.getElementById('results-count').textContent = Object.keys(coursesData).length;
+        }
+
+        function showHome() {
+            document.getElementById('page-home').classList.add('active');
+            document.getElementById('page-details').classList.remove('active');
+            renderCourses();
+            window.scrollTo(0, 0);
+        }
+
+        function updateFilterCounts() {
+            const cards = document.querySelectorAll('#courses-list .product-card');
+            const counts = {};
+            
+            cards.forEach(card => {
+                const category = card.dataset.category;
+                
+                // Contar por categoría
+                const categoryId = 'filter-' + category.toLowerCase().replace(/\s+/g, '-');
+                counts[categoryId] = (counts[categoryId] || 0) + 1;
+            });
+            
+            // Actualizar contadores en el DOM
+            Object.keys(counts).forEach(id => {
+                const countElement = document.getElementById('count-' + id);
+                if (countElement) {
+                    countElement.textContent = `(${counts[id]})`;
+                }
+            });
+        }
+
+        function applyFilters() {
+            const categoryCheckboxes = Array.from(document.querySelectorAll('#category-filters input[type="checkbox"]:checked'));
+            const selectedCategories = categoryCheckboxes.map(cb => cb.value);
+            
+            const cards = document.querySelectorAll('#courses-list .product-card');
+            let visibleCount = 0;
+            
+            cards.forEach(card => {
+                const cardCategory = card.dataset.category;
+                const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(cardCategory);
+                
+                if (categoryMatch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            document.getElementById('results-count').textContent = visibleCount;
+        }
+
+        function clearAllFilters() {
+            document.querySelectorAll('#page-home input[type="checkbox"]').forEach(cb => cb.checked = false);
+            applyFilters();
+        }
+
+        function searchCourses() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const cards = document.querySelectorAll('#courses-list .product-card');
+            let visibleCount = 0;
+            
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const meta = card.querySelector('.product-meta').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || meta.includes(searchTerm)) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            
+            document.getElementById('results-count').textContent = visibleCount;
+            
+            if (searchTerm.length > 0) {
+                document.querySelectorAll('#page-home input[type="checkbox"]').forEach(cb => cb.checked = false);
+            }
+        }
+
+        function showDetails(courseId) {
+            const course = coursesData[courseId];
+            if (!course) { console.error('Curso no encontrado'); return; }
+
+            document.getElementById('course-title').textContent = course.title;
+            document.getElementById('breadcrumb-title').textContent = course.title;
+            document.getElementById('breadcrumb-category').textContent = course.category;
+
+            document.getElementById('course-meta').innerHTML = `<span>📚 ${course.format}</span><span>|</span><span>${course.category}</span><span>|</span><span>⏱ ${course.duration}</span>`;
+            document.getElementById('course-tags').innerHTML = course.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+            document.getElementById('section-overview').innerHTML = `<h2>Descripción del Curso</h2>${course.overview.map(p => `<p>${p}</p>`).join('')}`;
+            document.getElementById('section-learnings').innerHTML = `<h2>Lo que Aprenderás</h2><ul>${course.learnings.map(item => `<li>${item}</li>`).join('')}</ul>`;
+            document.getElementById('section-audience').innerHTML = `<h2>A Quién Está Dirigido</h2><p>Este curso está diseñado para:</p><ul>${course.whoShouldAttend.map(item => `<li>${item}</li>`).join('')}</ul>`;
+            document.getElementById('section-prerequisites').innerHTML = `<h2>Prerequisitos</h2><p>${course.prerequisites}</p>`;
+            document.getElementById('section-topics').innerHTML = course.topics && course.topics.length > 0 ? `<h2>Temas del Curso</h2><ul>${course.topics.map(item => typeof item === 'string' ? `<li>${item}</li>` : `<li><strong>${item.day}:</strong> ${item.topic}</li>`).join('')}</ul>` : '';
+
+            document.getElementById('card-information').innerHTML = `<h3>Información del Curso</h3><div class="info-row"><span class="info-label">Duración:</span><span class="info-value">${course.duration}</span></div><div class="info-row"><span class="info-label">Formato:</span><span class="info-value">${course.format}</span></div><div class="info-row"><span class="info-label">Código:</span><span class="info-value">${course.courseCode}</span></div><div class="info-row"><span class="info-label">Programa:</span><span class="info-value">${course.program}</span></div><button class="secondary-button">Contáctanos</button>`;
+
+            document.getElementById('card-schedules').innerHTML = '';
+
+            document.getElementById('card-instructor').innerHTML = `<h3>Instructor</h3><p style="color: #333; line-height: 1.6;"><strong>${course.instructor.name}</strong><br>${course.instructor.bio}</p>`;
+
+            document.getElementById('page-home').classList.remove('active');
+            document.getElementById('page-details').classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Inicializar al cargar la página
+        window.addEventListener('DOMContentLoaded', function() {
+            renderFilters();
+            renderCourses();
+        });
+    </script>
+</body>
+</html>
