@@ -5,75 +5,447 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo Trainings</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
-        .top-header { background-color: #003366; padding: 10px 0; }
-        .header-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { display: flex; align-items: center; color: white; cursor: pointer; text-decoration: none; }
-        .logo:hover { opacity: 0.9; }
-        .search-box { flex: 1; max-width: 600px; margin: 0 40px; }
-        .search-box input { width: 100%; padding: 10px 15px; border: none; border-radius: 4px; font-size: 14px; }
-        .main-nav { background-color: white; border-bottom: 1px solid #ddd; }
-        .nav-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; }
-        .nav-container a { color: #003366; text-decoration: none; padding: 15px 0; font-weight: 500; display: inline-block; cursor: pointer; }
-        .nav-container a:hover { color: #0066cc; }
-        .sub-nav { background-color: #1a2c4d; padding: 20px 0; }
-        .breadcrumb { background-color: #f9f9f9; padding: 15px 0; border-bottom: 1px solid #ddd; }
-        .breadcrumb-container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
-        .breadcrumb a { color: #0066cc; text-decoration: none; cursor: pointer; }
-        .breadcrumb a:hover { text-decoration: underline; }
-        .breadcrumb span { color: #666; margin: 0 8px; }
-        .content-wrapper { max-width: 1400px; margin: 30px auto; padding: 0 20px; display: flex; gap: 30px; }
-        .products-container { flex: 1; }
-        .products-header { background-color: #1a2c4d; color: white; padding: 15px 20px; border-radius: 4px; margin-bottom: 20px; }
-        .filters-sidebar { width: 280px; flex-shrink: 0; }
-        .filter-card { background: white; padding: 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .filter-card h3 { color: #003366; font-size: 16px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #0066cc; }
-        .filter-group { margin-bottom: 12px; }
-        .filter-checkbox { display: flex; align-items: center; gap: 8px; padding: 8px 0; cursor: pointer; }
-        .filter-checkbox input[type="checkbox"] { cursor: pointer; width: 18px; height: 18px; }
-        .filter-checkbox label { cursor: pointer; color: #333; font-size: 14px; flex: 1; }
-        .filter-count { color: #999; font-size: 13px; }
-        .clear-filters { background: none; border: none; color: #0066cc; cursor: pointer; font-size: 14px; text-decoration: underline; padding: 10px 0; }
-        .clear-filters:hover { color: #0052a3; }
-        .product-card { background: white; padding: 20px; border-radius: 4px; margin-bottom: 15px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
-        .product-info h3 { color: #003366; margin-bottom: 10px; font-size: 18px; }
-        .product-meta { display: flex; gap: 15px; color: #666; font-size: 14px; }
-        .view-details-btn { background-color: #0066cc; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: 500; white-space: nowrap; }
-        .view-details-btn:hover { background-color: #0052a3; }
-        .back-link { display: inline-block; color: #0066cc; text-decoration: none; margin-bottom: 20px; font-size: 14px; cursor: pointer; }
-        .back-link:hover { text-decoration: underline; }
-        .course-header { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .course-title { color: #003366; font-size: 32px; margin-bottom: 15px; }
-        .course-meta { display: flex; gap: 20px; color: #666; font-size: 14px; margin-bottom: 20px; }
-        .course-meta span { display: flex; align-items: center; gap: 5px; }
-        .course-tags { display: flex; gap: 10px; flex-wrap: wrap; }
-        .tag { background-color: #e6f2ff; color: #003366; padding: 6px 12px; border-radius: 20px; font-size: 13px; }
-        .content-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
-        .main-content { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .sidebar-info { display: flex; flex-direction: column; gap: 20px; }
-        .info-card { background: white; padding: 25px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        .info-card h3 { color: #003366; margin-bottom: 15px; font-size: 18px; }
-        .info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
-        .info-row:last-child { border-bottom: none; }
-        .info-label { color: #666; font-weight: 500; }
-        .info-value { color: #333; text-align: right; }
-        .section { margin-bottom: 30px; }
-        .section h2 { color: #003366; font-size: 24px; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #0066cc; }
-        .section p { color: #333; line-height: 1.6; margin-bottom: 15px; }
-        .section ul { color: #333; line-height: 1.8; margin-left: 20px; }
-        .section li { margin-bottom: 8px; }
-        .cta-button { width: 100%; background-color: #0066cc; color: white; border: none; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 15px; }
-        .cta-button:hover { background-color: #0052a3; }
-        .secondary-button { width: 100%; background-color: white; color: #0066cc; border: 2px solid #0066cc; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 10px; }
-        .secondary-button:hover { background-color: #f0f7ff; }
-        .price { font-size: 28px; color: #003366; font-weight: bold; margin: 15px 0; }
-        .schedule-list { list-style: none; margin-left: 0; }
-        .schedule-item { padding: 15px; background-color: #f9f9f9; margin-bottom: 10px; border-radius: 4px; border-left: 3px solid #0066cc; }
-        .schedule-date { font-weight: 600; color: #003366; margin-bottom: 5px; }
-        .schedule-location { color: #666; font-size: 14px; }
-        .page-section { display: none; }
-        .page-section.active { display: block; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .top-header {
+            background-color: #003366;
+            padding: 10px 0;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+            .logo:hover {
+                opacity: 0.9;
+            }
+
+        .search-box {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 40px;
+        }
+
+            .search-box input {
+                width: 100%;
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+        .main-nav {
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+            .nav-container a {
+                color: #003366;
+                text-decoration: none;
+                padding: 15px 0;
+                font-weight: 500;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+                .nav-container a:hover {
+                    color: #0066cc;
+                }
+
+        .sub-nav {
+            background-color: #1a2c4d;
+            padding: 20px 0;
+        }
+
+        .breadcrumb {
+            background-color: #f9f9f9;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breadcrumb-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .breadcrumb a {
+            color: #0066cc;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+            .breadcrumb a:hover {
+                text-decoration: underline;
+            }
+
+        .breadcrumb span {
+            color: #666;
+            margin: 0 8px;
+        }
+
+        .content-wrapper {
+            max-width: 1400px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .products-container {
+            flex: 1;
+        }
+
+        .products-header {
+            background-color: #1a2c4d;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .filters-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+        }
+
+        .filter-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+            .filter-card h3 {
+                color: #003366;
+                font-size: 16px;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #0066cc;
+            }
+
+        .filter-group {
+            margin-bottom: 12px;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+            .filter-checkbox input[type="checkbox"] {
+                cursor: pointer;
+                width: 18px;
+                height: 18px;
+            }
+
+            .filter-checkbox label {
+                cursor: pointer;
+                color: #333;
+                font-size: 14px;
+                flex: 1;
+            }
+
+        .filter-count {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .clear-filters {
+            background: none;
+            border: none;
+            color: #0066cc;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: underline;
+            padding: 10px 0;
+        }
+
+            .clear-filters:hover {
+                color: #0052a3;
+            }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product-info h3 {
+            color: #003366;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .product-meta {
+            display: flex;
+            gap: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .view-details-btn {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+            .view-details-btn:hover {
+                background-color: #0052a3;
+            }
+
+        .back-link {
+            display: inline-block;
+            color: #0066cc;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+            .back-link:hover {
+                text-decoration: underline;
+            }
+
+        .course-header {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .course-title {
+            color: #003366;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .course-meta {
+            display: flex;
+            gap: 20px;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+            .course-meta span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+        .course-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #e6f2ff;
+            color: #003366;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .main-content {
+            background: white;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .sidebar-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+            padding: 25px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+            .info-card h3 {
+                color: #003366;
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+            .info-row:last-child {
+                border-bottom: none;
+            }
+
+        .info-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+            .section h2 {
+                color: #003366;
+                font-size: 24px;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #0066cc;
+            }
+
+            .section p {
+                color: #333;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            .section ul {
+                color: #333;
+                line-height: 1.8;
+                margin-left: 20px;
+            }
+
+            .section li {
+                margin-bottom: 8px;
+            }
+
+        .cta-button {
+            width: 100%;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+            .cta-button:hover {
+                background-color: #0052a3;
+            }
+
+        .secondary-button {
+            width: 100%;
+            background-color: white;
+            color: #0066cc;
+            border: 2px solid #0066cc;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            .secondary-button:hover {
+                background-color: #f0f7ff;
+            }
+
+        .price {
+            font-size: 28px;
+            color: #003366;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .schedule-list {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .schedule-item {
+            padding: 15px;
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+        }
+
+        .schedule-date {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 5px;
+        }
+
+        .schedule-location {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .page-section {
+            display: none;
+        }
+
+            .page-section.active {
+                display: block;
+            }
     </style>
 </head>
 <body>
@@ -81,7 +453,7 @@
         <div class="header-container">
             <a onclick="showHome()" class="logo">
                 <svg width="40" height="40" viewBox="0 0 40 40">
-                    <circle cx="20" cy="20" r="18" fill="white"/>
+                    <circle cx="20" cy="20" r="18" fill="white" />
                     <text x="20" y="26" text-anchor="middle" font-size="20" fill="#003366" font-weight="bold">DT</text>
                 </svg>
                 <span style="font-size: 24px; font-weight: bold; margin-left: 10px;">Demo Trainings</span>
@@ -171,51 +543,84 @@
         // Variable global para almacenar los cursos
         let coursesData = {};
 
-        // Función auxiliar para parsear CSV
-        function parseCSVLine(line) {
-            const result = [];
-            let current = '';
+        // Función para parsear CSV correctamente (maneja saltos de línea dentro de campos)
+        function parseCSV(csvText) {
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
             let insideQuotes = false;
-            
-            for (let i = 0; i < line.length; i++) {
-                const char = line[i];
-                const nextChar = line[i + 1];
-                
+            let i = 0;
+
+            while (i < csvText.length) {
+                const char = csvText[i];
+
                 if (char === '"') {
-                    if (insideQuotes && nextChar === '"') {
-                        current += '"';
-                        i++;
+                    if (insideQuotes && csvText[i + 1] === '"') {
+                        currentField += '"';
+                        i += 2;
+                        continue;
                     } else {
                         insideQuotes = !insideQuotes;
+                        i++;
+                        continue;
                     }
-                } else if (char === ',' && !insideQuotes) {
-                    result.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
+                }
+
+                if (char === ',' && !insideQuotes) {
+                    currentRow.push(currentField.replace(/"/g, '').trim());
+                    currentField = '';
+                    i++;
+                    continue;
+                }
+
+                if ((char === '\n' || char === '\r') && !insideQuotes) {
+                    if (currentField || currentRow.length > 0) {
+                        currentRow.push(currentField.replace(/"/g, '').trim());
+                        if (currentRow.some(f => f)) {
+                            rows.push(currentRow);
+                        }
+                        currentRow = [];
+                        currentField = '';
+                    }
+                    if (char === '\r' && csvText[i + 1] === '\n') {
+                        i += 2;
+                    } else {
+                        i++;
+                    }
+                    continue;
+                }
+
+                currentField += char;
+                i++;
+            }
+
+            if (currentField || currentRow.length > 0) {
+                currentRow.push(currentField.replace(/"/g, '').trim());
+                if (currentRow.some(f => f)) {
+                    rows.push(currentRow);
                 }
             }
-            result.push(current.trim());
-            return result;
+
+            return rows;
         }
 
         // Función para procesar CSV y llenar coursesData
         function processCSVData(csvText) {
-            const lines = csvText.split('\n').map(line => line.trim()).filter(line => line);
-            
-            if (lines.length < 2) throw new Error('CSV vacío o sin datos');
-            
-            const headers = parseCSVLine(lines[0]).map(h => h.toLowerCase().replace(/"/g, ''));
+            const rows = parseCSV(csvText);
+
+            if (rows.length < 2) throw new Error('CSV vacío o sin datos');
+
+            const headers = rows[0].map(h => h.toLowerCase());
             coursesData = {};
-            
-            for (let i = 1; i < lines.length; i++) {
-                const values = parseCSVLine(lines[i]);
+
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i];
                 if (values.length < 2 || !values[0]) continue;
-                
+
                 const course = {};
                 headers.forEach((header, index) => {
-                    let value = (values[index] || '').replace(/"/g, '').trim();
-                    
+                    let value = (values[index] || '').trim();
+
                     // Convertir campos con saltos de línea en arrays
                     if (['topics', 'whoshouldattend', 'tags'].some(k => header.includes(k))) {
                         // Dividir por saltos de línea O por punto y coma
@@ -225,34 +630,20 @@
                         course[header] = value;
                     }
                 });
-                
+
                 if (course.id) {
-                    // Extraer category del program (ej: "HSE - Fase 1" -> "HSE")
-                    // Manejar casos como "Facilidades de superficie (FE1) - Fase 1" -> "FE1"
-                    let category = 'General';
-                    const programStr = course.program || '';
-                    
-                    // Buscar patrón entre paréntesis: (FE1), (FE2), (SS), etc.
-                    const parenthesesMatch = programStr.match(/\(([A-Z]+\d*)\)/);
-                    if (parenthesesMatch) {
-                        category = parenthesesMatch[1];
-                    } else {
-                        // Buscar al inicio: HSE, FE1, SS, etc.
-                        const startMatch = programStr.match(/^([A-Z]+\d*)/);
-                        if (startMatch) {
-                            category = startMatch[1];
-                        }
-                    }
-                    
+                    // Usar la columna 'categories' directamente del CSV
+                    const category = course.categories || 'General';
+
                     // Generar overview desde los primeros 3-5 topics si existen
                     const overviewText = Array.isArray(course.topics) && course.topics.length > 0
                         ? course.topics.slice(0, Math.min(5, course.topics.length)).join(', ')
                         : 'Curso de capacitación especializada.';
-                    
+
                     coursesData[course.id] = {
                         id: course.id,
                         title: course.title || '',
-                        category: category || course.program,
+                        category: category,
                         program: course.program || '',
                         programCode: course.programcode || '',
                         format: course.format || 'Presencial',
@@ -287,7 +678,7 @@
         async function loadFromGitHub() {
             console.log('🔄 Intentando cargar desde GitHub Raw...');
             const csvUrl = 'https://raw.githubusercontent.com/jalcala11/HSE_CVX_TRAINING/refs/heads/main/CursosEM.csv';
-            
+
             const loadPromise = (async () => {
                 const response = await fetch(csvUrl);
                 if (!response.ok) throw new Error(`GitHub error: ${response.status}`);
@@ -295,7 +686,7 @@
                 if (!csvText || csvText.length < 10) throw new Error('Respuesta vacía o inválida');
                 processCSVData(csvText);
             })();
-            
+
             await withTimeout(loadPromise, 3000);
             console.log(`✅ ${Object.keys(coursesData).length} cursos cargados desde GitHub`);
         }
@@ -317,11 +708,11 @@
         // Renderizar filtros dinámicamente
         function renderFilters() {
             const categories = new Set();
-            
+
             Object.values(coursesData).forEach(course => {
                 categories.add(course.category);
             });
-            
+
             // Renderizar filtros de categoría
             const categoryFiltersContainer = document.getElementById('category-filters');
             categoryFiltersContainer.innerHTML = '';
@@ -330,40 +721,70 @@
                 const filterDiv = document.createElement('div');
                 filterDiv.className = 'filter-checkbox';
                 filterDiv.innerHTML = `
-                    <input type="checkbox" id="${filterId}" value="${category}" onchange="applyFilters()">
-                    <label for="${filterId}">${category}</label>
-                    <span class="filter-count" id="count-${filterId}">(0)</span>
-                `;
+                        <input type="checkbox" id="${filterId}" value="${category}" onchange="applyFilters()">
+                        <label for="${filterId}">${category}</label>
+                        <span class="filter-count" id="count-${filterId}">(0)</span>
+                    `;
                 categoryFiltersContainer.appendChild(filterDiv);
             });
+        }
+
+        // Función para obtener icono según formato
+        function getFormatIcon(format) {
+            const formatLower = (format || '').toLowerCase();
+            if (formatLower.includes('presencial')) return '👤';
+            if (formatLower.includes('virtual')) return '💻';
+            if (formatLower.includes('hibrido') || formatLower.includes('híbrido')) return '🔄';
+            return '📖';
+        }
+
+        // Función para obtener icono según categoría
+        function getCategoryIcon(category) {
+            const catLower = (category || '').toLowerCase();
+            if (catLower.includes('fe1') || catLower.includes('fe2') || catLower.includes('facilidades')) return '🏭';
+            if (catLower.includes('hse')) return '⚠️';
+            if (catLower.includes('ss') || catLower.includes('subsuelo')) return '🛢️';
+            if (catLower.includes('vv')) return '✓';
+            if (catLower.includes('liderazgo') || catLower.includes('lw') || catLower.includes('leadership')) return '👔';
+            if (catLower.includes('lif') || catLower.includes('izamiento')) return '🔧';
+            if (catLower.includes('ics') || catLower.includes('incident')) return '🚨';
+            if (catLower.includes('fs') || catLower.includes('campo')) return '🏗️';
+            if (catLower.includes('ihe') || catLower.includes('electricista')) return '⚡';
+            if (catLower.includes('coo') || catLower.includes('operation') || catLower.includes('conducta')) return '📋';
+            return '📚';
         }
 
         // Renderizar cursos al cargar la página
         function renderCourses() {
             const coursesList = document.getElementById('courses-list');
             coursesList.innerHTML = '';
-            
+
             Object.values(coursesData).forEach(course => {
                 const card = document.createElement('div');
                 card.className = 'product-card';
                 card.dataset.category = course.category;
                 card.dataset.format = course.format;
-                
+
+                const formatIcon = getFormatIcon(course.format);
+                const categoryIcon = getCategoryIcon(course.category);
+
                 card.innerHTML = `
-                    <div class="product-info">
-                        <h3>${course.title}</h3>
-                        <div class="product-meta">
-                            <span>📚 ${course.category}</span>
-                            <span>|</span>
-                            <span>${course.duration}</span>
+                        <div class="product-info">
+                            <h3>${course.title}</h3>
+                            <div class="product-meta">
+                                <span>${categoryIcon} ${course.category}</span>
+                                <span>|</span>
+                                <span>${formatIcon} ${course.format}</span>
+                                <span>|</span>
+                                <span>⏱ ${course.duration}</span>
+                            </div>
                         </div>
-                    </div>
-                    <button class="view-details-btn" onclick="showDetails('${course.id}')">Ver Detalles</button>
-                `;
-                
+                        <button class="view-details-btn" onclick="showDetails('${course.id}')">Ver Detalles</button>
+                    `;
+
                 coursesList.appendChild(card);
             });
-            
+
             updateFilterCounts();
             document.getElementById('results-count').textContent = Object.keys(coursesData).length;
         }
@@ -378,15 +799,15 @@
         function updateFilterCounts() {
             const cards = document.querySelectorAll('#courses-list .product-card');
             const counts = {};
-            
+
             cards.forEach(card => {
                 const category = card.dataset.category;
-                
+
                 // Contar por categoría
                 const categoryId = 'filter-' + category.toLowerCase().replace(/\s+/g, '-');
                 counts[categoryId] = (counts[categoryId] || 0) + 1;
             });
-            
+
             // Actualizar contadores en el DOM
             Object.keys(counts).forEach(id => {
                 const countElement = document.getElementById('count-' + id);
@@ -399,14 +820,14 @@
         function applyFilters() {
             const categoryCheckboxes = Array.from(document.querySelectorAll('#category-filters input[type="checkbox"]:checked'));
             const selectedCategories = categoryCheckboxes.map(cb => cb.value);
-            
+
             const cards = document.querySelectorAll('#courses-list .product-card');
             let visibleCount = 0;
-            
+
             cards.forEach(card => {
                 const cardCategory = card.dataset.category;
                 const categoryMatch = selectedCategories.length === 0 || selectedCategories.includes(cardCategory);
-                
+
                 if (categoryMatch) {
                     card.style.display = 'flex';
                     visibleCount++;
@@ -414,7 +835,7 @@
                     card.style.display = 'none';
                 }
             });
-            
+
             document.getElementById('results-count').textContent = visibleCount;
         }
 
@@ -427,11 +848,11 @@
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             const cards = document.querySelectorAll('#courses-list .product-card');
             let visibleCount = 0;
-            
+
             cards.forEach(card => {
                 const title = card.querySelector('h3').textContent.toLowerCase();
                 const meta = card.querySelector('.product-meta').textContent.toLowerCase();
-                
+
                 if (title.includes(searchTerm) || meta.includes(searchTerm)) {
                     card.style.display = 'flex';
                     visibleCount++;
@@ -439,9 +860,9 @@
                     card.style.display = 'none';
                 }
             });
-            
+
             document.getElementById('results-count').textContent = visibleCount;
-            
+
             if (searchTerm.length > 0) {
                 document.querySelectorAll('#page-home input[type="checkbox"]').forEach(cb => cb.checked = false);
             }
@@ -455,7 +876,9 @@
             document.getElementById('breadcrumb-title').textContent = course.title;
             document.getElementById('breadcrumb-category').textContent = course.category;
 
-            document.getElementById('course-meta').innerHTML = `<span>📚 ${course.format}</span><span>|</span><span>${course.category}</span><span>|</span><span>⏱ ${course.duration}</span>`;
+            const formatIcon = getFormatIcon(course.format);
+            const categoryIcon = getCategoryIcon(course.category);
+            document.getElementById('course-meta').innerHTML = `<span>${categoryIcon} ${course.category}</span><span>|</span><span>${formatIcon} ${course.format}</span><span>|</span><span>⏱ ${course.duration}</span>`;
             document.getElementById('course-tags').innerHTML = course.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
             document.getElementById('section-overview').innerHTML = `<h2>Descripción del Curso</h2>${course.overview.map(p => `<p>${p}</p>`).join('')}`;
@@ -476,7 +899,7 @@
         }
 
         // Inicializar al cargar la página
-        window.addEventListener('DOMContentLoaded', function() {
+        window.addEventListener('DOMContentLoaded', function () {
             loadCourses();
         });
     </script>
