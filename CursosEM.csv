@@ -1,11 +1,821 @@
-id,program,programCode,title,format,courseCode,duration,category,overview,learnings,whoShouldAttend,prerequisites,topics,instructor_name,instructor_bio,tags
-FE1 101,Facilidades de superficie (FE1) - Fase 1,FE1 100,Separadores,Presencial,FE1 101,8,Operaciones,"Curso sobre principios de funcionamiento de separadores.","Comprensión de principios;Identificación de variables;Aplicación de salvaguardas;Mantenimiento básico","Operadores;Técnicos;Ingenieros de proceso",,Principios de funcionamiento;Variables de proceso;Salvaguardas;Mantenimiento;Tratadores y emulsiones,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 102,Facilidades de superficie (FE1) - Fase 1,FE1 100,Tanques,Presencial,FE1 102,8,Operaciones,"Curso sobre tipos de tanques y medición.","Identificación de tipos;Aplicación de salvaguardas;Medición de tanques;Uso de tablas API","Operadores;Técnicos;Ingenieros de proceso",,Tipos de tanques;Salvaguardas para HC;Seguridad;Problemas comunes;Medición automática,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 103,Facilidades de superficie (FE1) - Fase 1,FE1 100,Combustión y Evaluación de Hornos,Presencial,FE1 103,8,Operaciones,"Curso sobre hornos y combustión.","Identificación de hornos;Comprensión de combustión;Procedimientos de encendido;Seguridad","Operadores;Técnicos;Ingenieros de proceso",,Tipos de hornos;Combustión;Quemadores;Seguridad en hornos;Ejercicios,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 104,Facilidades de superficie (FE1) - Fase 1,FE1 100,Válvulas de control,Presencial,FE1 104,8,Operaciones,"Curso sobre válvulas de control.","Comprensión de principios;Identificación de tipos;Procedimientos de mantenimiento","Operadores;Técnicos;Ingenieros de proceso",,Introducción;Principios de funcionamiento;Tipos de válvulas;Mantenimiento preventivo,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 105,Facilidades de superficie (FE1) - Fase 1,FE1 100,Compresores,Presencial,FE1 105,8,Operaciones,"Curso sobre compresores.","Comprensión de sistemas;Identificación de tipos;Procedimientos de arranque;Mantenimiento","Operadores;Técnicos;Ingenieros de proceso",,Compresores de aire;Tipos de compresores;Salvaguarda;Seguridad en operaciones;Mantenimiento,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 106,Facilidades de superficie (FE1) - Fase 1,FE1 100,Operaciones de oleoductos,Presencial,FE1 106,4,Operaciones,"Curso sobre tuberías y flujo.","Comprensión de tuberías;Procedimientos de lanzamiento;Identificación de problemas","Operadores;Técnicos;Ingenieros de proceso",,Tuberías;Flujo multifásico;Mantenimiento de válvulas;Problemas de integridad;Diseño,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 107,Facilidades de superficie (FE1) - Fase 1,FE1 100,Integridad de Activos y Ensayos No Destructivos,Presencial,FE1 107,4,Operaciones,"Curso sobre corrosión e inspección.","Comprensión de corrosión;Aplicación de RBI;Conocimiento de END;Inspección","Operadores;Técnicos;Ingenieros de proceso",,Fenómenos de Corrosión;Importancia del RBI;Tipos de END;Integridad mecánica;Inspección,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 108,Facilidades de superficie (FE1) - Fase 1,FE1 100,Instrumentación,Presencial,FE1 108,8,Operaciones,"Curso sobre instrumentación.","Definición de variables;Comprensión de lazos;Lectura de planos P&ID;Interpretación","Operadores;Técnicos;Ingenieros de proceso",,Definición Instrumentación;Variables;Medición;Escalas;Medidores;Simbología;Lectura de planos,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 109,Facilidades de superficie (FE1) - Fase 1,FE1 100,Operadores de producción de Campo,Presencial,FE1 109,8,Operaciones,"Curso sobre rol del operador.","Comprensión del rol;Manejo de diluente;Control de incendios;Detección de fuego","Operadores;Técnicos;Ingenieros de proceso",,Rol del operador;Estabilización del crudo;Manejo de Diluente;Gas de servicio;Control de Incendios,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
-FE1 110,Facilidades de superficie (FE1) - Fase 1,FE1 100,Corrosión y emisiones,Presencial,FE1 110,4,Operaciones,"Curso sobre corrosión.","Comprensión de corrosión;Aplicación de protecciones;Identificación de emisiones","Operadores;Técnicos;Ingenieros de proceso",,Corrosión;Mecanismos de protección;Fallas en recubrimientos;Fuentes de emisiones,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,Instrumentación;Medición;P&ID
+id,program,programCode,title,format,courseCode,duration,topics,prerequisites,whoShouldAttend,instructor_name,instructor_bio,tags
+FE1 101,Facilidades de superficie (FE1) - Fase 1,FE1 100,Separadores,Presencial,FE1 101,8,"Principios de funcionamiento​
+Variables de proceso a controlar​
+Salvaguardar típicas de estos sistemas​
+Mantenimiento​
+Tratadores y emulsiones",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 102,Facilidades de superficie (FE1) - Fase 1,FE1 100,Tanques,Presencial,FE1 102,8,"Tipos de tanques​
+Salvaguardas para tanques de HC​
+Seguridad​
+Problemas comunes en los tanques​
+Uso de tablas API​
+Medición de tanques​
+Medición automática de tanques ",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 103,Facilidades de superficie (FE1) - Fase 1,FE1 100,Combustión y Evaluación de Hornos,Presencial,FE1 103,8,"Tipos de hornos​
+Secciones del horno​
+Combustión​
+Quemadores​
+Variables operacionales ​
+Seguridad en los hornos​
+Problemas Operacionales ​
+Procedimiento a seguir para encender un horno​
+Ejercicios",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 104,Facilidades de superficie (FE1) - Fase 1,FE1 100,Válvulas de control,Presencial,FE1 104,8,"Introduccion​
+Principios de funcionamiento de las válvulas de control​
+Tipos de válvulas de control​
+Procedimientos de mantenimiento preventivo de válvulas de control",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 105,Facilidades de superficie (FE1) - Fase 1,FE1 100,Compresores,Presencial,FE1 105,8,"Sistema de Aire comprimido​
+Compresores y sus aplicaciones​
+Tipos de compresores​
+Tratamiento del aire​
+Salvaguarda compresores de aire comprimido​
+Compresores de gas natural​
+Compresores de simple y doble efecto​
+Componentes de compresores reciprocantes​
+Seguridad en las operaciones ​
+Procedimiento de arranque​
+Mantenimiento",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE 106,Facilidades de superficie (FE1) - Fase 1,FE1 100,Operaciones de oleoductos,Presencial,FE 106,4,"Vista general de tuberías​
+Procedimiento para la trampa de lanzamiento y recepción de cochino.​
+Flujo multifásico​
+Mantenimiento de válvulas​
+Problemas de integridad típicos​
+Como identificar el rating de tuberías y su diseño",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE 107,Facilidades de superficie (FE1) - Fase 1,FE1 100,Integridad de Activos y Ensayos No Destructivos,Presencial,FE 107,4,"Fenómenos de Corrosión comunes y sus consecuencias.​
+Importancia del RBI​
+Falla de los materiales.​
+Visión general de los END.
+Tipos de END​
+Selección de END.​
+Estándares​
+Integridad mecánica de equipos estáticos y rotativos.​
+Inspección en marcha de equipos y en parada",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 108,Facilidades de superficie (FE1) - Fase 1,FE1 100,Instrumentacion,Presencial,FE1 108,8,"Definición
+Instrumentación
+Variables
+Lazo de control
+Medición
+Escalas
+Factores de medición
+Medidores
+Simbología de instrumentación
+Lectura de planos P&ID",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE 109,Facilidades de superficie (FE1) - Fase 1,FE1 100,Operadores de produccion de Campo,Presencial,FE 109,8,"Rol del operador
+​Estabilización del crudo
+​Manejo de Diluente en CPF​​
+Gas de servicio​
+​Sistema de venteo​​
+Manejo de químicos​
+Sistema de Control de Incendios​
+Sistema de proporcionador de espuma​
+Sistema de detección de fuego",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE110,Facilidades de superficie (FE1) - Fase 1,FE1 100,Corrosion y emisiones,Presencial,FE110,4,"Corrosión ​
+Mecanismos de protección ​
+Fallas en los recubrimientos ​
+Fuentes de emisiones",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE 111,Facilidades de superficie (FE1) - Fase 1,FE1 100,Medidores de flujo,Presencial,FE 111,4,"Medición de flujo​
+Medición de tanques
+Medición automática de tanques​
+Medidores Coriolis​
+Medidor de flujo de vórtice​
+LACT",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE112,Facilidades de superficie (FE1) - Fase 1,FE1 100,Pruebas de pozos,Presencial,FE112,4,"Introducción a las pruebas de pozos​
+Rangos de presión en las pruebas de pozos
+Colectores de prueba​
+Separador de prueba​
+Depuración​
+Procedimiento/tiempos",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 101,Operaciones de superficie (FE2) - Fase 1,FE2 100,Bombas,Presencial,FE2 101,8,"Tipos de bombas ​
+Succión y descarga de las bombas
+Bombas Booster​
+Bombas de desplazamiento positivo​
+Bombas centrífugas​
+Principios de funcionamiento de las bombas.​
+Parámetros de operación y control de bombas.​
+Sistemas de seguridad para bombas​
+Problemas comunes de bombas y soluciones​
+Mantenimiento y cuidado de bombas",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 102,Operaciones de superficie (FE2) - Fase 1,FE2 100,Bombas: Mantenimiento,Presencial,FE2 102,8,"Efectos de la cavitación
+Erosión del material
+Vibraciones
+Ruidos y golpes
+Disminución de la eficiencia
+Comunicación entre turnos",FE2 101,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 103,Operaciones de superficie (FE2) - Fase 1,FE2 100,Mechurrios,Presencial,FE2 103,8,"Principios de funcionamiento​
+​Depurador del mechurrio​
+Mechurrio y combustores​​
+Parámetros de operación y control​
+Factores que afectan su desempeño​
+Mantenimiento y Seguridad​
+​Regulación Ambiental",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 104,Operaciones de superficie (FE2) - Fase 1,FE2 100,Variadores de Frecuencia (VFD),Presencial,FE2 104,8,"Principios de funcionamiento
+Campos de aplicación
+Variables de control
+Instalación y pruebas
+Interpretación de resultados
+Mantenimiento.​
+Problemas y soluciones.",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 105,Operaciones de superficie (FE2) - Fase 1,FE2 100,Telemetria,Presencial,FE2 105,8,"Telemetría​
+​Operaciones de ductos
+Aspectos claves​
+PLC ​
+Sistema SCADA (Supervisory Control And Data).​
+Sistemas SCADA y los DCS.​
+​Recolección de Datos​
+Aplicaciones en La Industria de Oleoductos Y Gasoductos.​
+Control de procesos",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 106,Operaciones de superficie (FE2) - Fase 1,FE2 100,Electricidad en Operaciones de Petróleo y Gas,Presencial,FE2 106,4,"Introducción​
+Fuentes de electricidad
+Equipos Eléctricos​
+Actividades peligrosas​
+Torres eléctricas​
+Clasificación de las áreas eléctricas​
+Arco Eléctrico​
+Mantenimiento adecuado​
+Riesgos de electricidad viva",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 107,Operaciones de superficie (FE2) - Fase 1,FE2 100,Terminales de almacenamiento de crudo,Presencial,FE2 107,4,"Operación de Terminales de Almacenamiento de Crudo​
+Seguridad en el Almacenamiento de Petróleo​
+Preocupaciones de Seguridad en Almacenamiento de Petróleo​
+Medidas de Seguridad​
+Impacto Ambiental del Almacenamiento de Petróleo Crudo​
+Marco Regulatorio​
+Mejores Prácticas para la Protección Ambiental",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 108,Operaciones de superficie (FE2) - Fase 1,FE2 100,Sistemas de gestión de quemadores (BMS),Presencial,FE2 108,4,"Funcionamiento 
+Navegacion
+Introduccion a las pantallas del BMS
+Vision general de los estados operativos",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 109,Operaciones de superficie (FE2) - Fase 1,FE2 100,Solucion de problemas se separadores,Presencial,FE2 109,4,"Problemas de operacion del separador
+Valvula de descarga atascada
+Salida de fluidos por la linea de gas
+Problemas comunes con la placa de orificio
+Problemas comunes con el patín de soporte del compresor
+Ventilación de tanques",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 110,Operaciones de superficie (FE2) - Fase 1,FE2 100,Principios de Corrosión,Presencial,FE2 110,4,"Concepto de corrosion
+Factores que afectan la corrosion
+Principio de proteccion catodica
+Estudios preliminares
+Proteccion catodica
+Anodos de sacrificio
+Corriente impresa
+Revestimiento y proteccion catodica
+Bridas de aislacion y resistencia
+Interferencia",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 101,Subsuelo (SS) - Fase 1,SS 100,Sistemas de Levantamiento Artificial    (BES/BCP/BM),Presencial,SS 101,8,"Introducción al Sistema de Levantamiento Artificial​
+Bombeo Electrosumergible (BES)​
+Bomba de Cavidad Progresiva (BCP)​
+Bombeo Mecánico (BM / ROD PUMP)",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 102,Subsuelo (SS) - Fase 1,SS 100,Optimizacion y Subsuelo (Diluyente),Presencial,SS 102,4,"Diluent.
+Injection rate adjustment
+Monitoring of artificial lift systems.
+ Preventive maintenance.",SS 101,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 102,Subsuelo (SS) - Fase 1,SS 100,Optimización y Subsuelo​ (Monitoreo – Mantenimiento),Presencial,SS 102,4,"Monitoreo de los Sistemas de Levantamiento Artificial. ​​
+Mantenimiento Preventivo y Correctivo de Sistemas de Levantamiento.",SS 101,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 103,Subsuelo (SS) - Fase 1,SS 100,Cabezales de Pozo,Presencial,SS 103,8,"Revestidores​
+Cabezal de pozo.​
+Árbol de Navidad.​
+Problemas Comunes & Soluciones ​
+Cabezal de Rotación ​
+.-Función ​
+.-Mantenimiento
+",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 104,Subsuelo (SS) - Fase 1,SS 100,Conceptos Básicos de Química de Producción,Presencial,SS 104,8,"Tipos de Químicos​
+Almacenamiento​
+Bombas Químicas​
+Consideraciones Ambientales y Regulaciones​
+Mantenimiento Preventivo",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 105,Subsuelo (SS) - Fase 1,SS 100,Manejo de produccion de gas,Presencial,SS 105,3,"Manejo de Gas desde el Pozo​
+Influencia del Gas en la Producción​
+Sistemas de Producción de Gas.​
+Redes de Gas​
+Ubicación de las Líneas de Gas.​
+Fiscalización y Balanceo de Gas.​
+Normativa.",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 105,Subsuelo (SS) - Fase 1,SS 100,Huella de Carbono,Presencial,SS 105,1,"Huella de Carbono​
+Reducir la Huella de Carbono​
+Importancia de Reducir la Huella de Carbono",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS106,Subsuelo (SS) - Fase 1,SS 100,Exploración de Petróleo y Gas,Presencial,SS106,4,"Introducción a la Exploración de Petróleo y Gas​
+Métodos de Exploración de Petróleo y Gas​
+Uso de los Datos de Exploración​
+Exploración Sísmica​
+Geología en la Producción de Hidrocarburos​
+Perforación y Producción​
+Gestión de Campos Maduros y Avances Tecnológicos​
+Registros de Pozos y Evaluación de Formaciones",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 107,Subsuelo (SS) - Fase 1,SS 100,Perforación​,Presencial,SS 107,4,"Geología​
+Registro de pozos​
+Terminación de pozos​
+Selección y degradación de materiales​
+Visitas al sitio de operaciones",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 108,Subsuelo (SS) - Fase 1,SS 100,Intervencion de pozos,Presencial,SS 108,4,"Introducción a los reacondicionamientos​
+Intervención de pozos y técnicas clave​
+Métodos de diagnóstico para reacondicionamientos​
+Plataformas de reacondicionamiento​
+Reacondicionamientos sin plataforma​
+Bombas de extracción",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 109,Subsuelo (SS) - Fase 1,SS 100,Pruebas de pozos,Presencial,SS 109,4,"Tipos de Pruebas de Pozos​
+Manifolds​
+Separadores​
+Equipo de Prueba​
+Datos",,"Operadores
+Técnicos
+Ingenieros de proceso",Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+SS 110,Subsuelo (SS) - Fase 1,SS 100,Introducción a la Ingeniería de Yacimientos,Presencial,SS 110,4,"Conceptos básicos de ingeniería de reservorios
+Incertidumbres en Producción
+Perforación",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 101,HSE - Fase 1,HSE 100,Conceptos Basicos Excelencia Operacional,Presencial,HSE 101,8,"Sentido de vulnerabilidad
+Autoridad para detener el trabajo
+Principios operacionales
+EPPs
+Importancia de la seguridad de procesos
+Lista de Verificación para el Inicio del Trabajo (VIT)
+Rueda de identificación de peligros",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 102,HSE - Fase 1,HSE 100,"Atmosferas explosivas y Sulfuro de Hidrogeno (H2S), Espacios Confinados",Presencial,HSE 102,4,"Presencia
+Efectos sobre la salud
+Caracteristicas
+Proteccion respiratoria
+Prueba de gas
+Espacios confinados: Requisitos
+Plan de rescate
+",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 103,HSE - Fase 1,HSE 100,Análisis de riesgo en el trabajo (A.R.T) ,Presencial,HSE 103,4,"Métodos de Análisis de Riesgo en el Trabajo (ART)
+Metodología Norma PDVSA IR-S-17 
+Proceso del Análisis de Riesgos en el Trabajo​
+Responsabilidades
+Anexo A
+Actividad grupal",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 103,HSE - Fase 1,HSE 100,Sistema de Permisos de Trabajo,Presencial,HSE 103,2,"Objetivos
+NORMA PDVSA IR-S-04
+Conceptos Básicos​
+Elementos del Sistema​
+Definición de Permisos ""en Frío ó en Caliente“",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 104,HSE - Fase 1,HSE 100,Aislamiento de energías peligrosas - Bloqueo y etiquetado (LOTO),Presencial,HSE 104,4,"Proceso de Control de Fuentes de Energía (LOTO) 
+Conceptos Básicos​
+Tipos de Dispositivos Bloqueo
+Roles y responsabilidades
+Componentes Claves",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 105,HSE - Fase 1,HSE 100,Trabajo en altura: escaleras y andamios y uso de arnes,Presencial,HSE 105,5,"Seguridad en Escaleras Portatiles, Fijas
+Roles y responsabilidades
+Riesgos comunes
+Sistemas de proteccion
+Anclajes
+Caida Libre
+VIT
+Inspeccion
+Andamios: tipos, partes, condiciones, montaje",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 105,HSE - Fase 1,HSE 100,Salvaguardas ,Presencial,HSE 105,2,"Concepto
+Bow Tie
+Modelo queso suizo
+Tipos de salvaguardas
+Actividad grupal",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 106,HSE - Fase 1,HSE 100,Trabajo eléctricos energizados y desenergizado,Presencial,HSE 106,4,"Principios basicos
+Roles y responsabilidades
+Certificados
+Requisitos
+VIT
+Caso estudio",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 107,HSE - Fase 1,HSE 100,Trabajo en caliente,Presencial,HSE 107,2.5,"Conceptos Básicos​
+Normativa PDVSA
+Trabajo en Caliente con Llama Abierta y No Abierta
+Areas clasificadas
+Prueba de gas
+Certificados para Trabajos Especiales",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 108,HSE - Fase 1,HSE 100,Excavación,Presencial,HSE 108,2,"Excavación vs Zanja​
+Estándares de excavación de OSHA​
+Tipos de excavaciones​
+Ubicación de líneas
+Preparación de la excavación para la entrada​",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 109,HSE - Fase 1,HSE 100,Izamiento de Cargas,Presencial,HSE 109,2,"Tipos
+Equipos y Accesorios para Izaje de Cargas
+Documentos requeridos​
+VIT 
+Requisitos de Levantamiento y Aparejamiento​
+Plan de Comunicación​
+Mitigaciones de Riesgos​",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 110,HSE - Fase 1,HSE 100,HOP,Presencial,HSE 110,1,"Conceptos 
+Principios HOP​",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 111,HSE - Fase 1,HSE 100,Protección auditiva y golpe de calor,Presencial,HSE 111,2,"Efectos del ruido
+Fuentes de ruido
+Tipos de Protección Auditiva
+Niveles de ruido
+Efectos Físicos y Mentales
+Índice de Calor
+Mantenerse Seguro en el Calor",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 112,HSE - Fase 1,HSE 100,Reducción de huella de Carbono,Presencial,HSE 112,2,"Protocolo de Kyoto​​
+Gases Efecto Invernadero (GEI)​
+¿Qué son?, ¿Cuáles son?​
+Calentamiento global y cambio climático​
+GEI detalles y características​
+¿Qué debe reportarse?​
+Términos y definiciones​​
+Fuentes de GEI en la industria​
+Consejos para reducir emisiones CO2",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 113,HSE - Fase 1,HSE 100,Primeros Auxilios,Presencial,HSE 113,3,"Introducción/conceptos básicos
+Emergencias respiratorias
+Emergencias por asfixia
+Emergencias del sistema nervioso
+Picaduras, extintores
+Emergencias del sistema nervioso",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 114,HSE - Fase 1,HSE 100,Manejo de desechos,Presencial,HSE 114,1,"Tipos de Residuos: Introducción​
+Residuos Peligrosos​
+Almacenamiento y Eliminación​
+Etiquetado de Residuos​",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 115,HSE - Fase 1,HSE 100,Seguridad vehicular en el campo (MVS) ,Presencial,HSE 115,1,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 201,Facilidades de superficie - Fase 2,FE1 200,Analisis de fallas de equipos rotativos,Presencial,FE1 201,4,"Introducción al Análisis de Fallas
+Tipos de Fallas en Equipos Rotativos
+Técnicas de Análisis de Fallas
+Análisis de Causa Raíz
+Acciones Correctivas y Preventivas
+Documentación e Informes",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 202,Facilidades de superficie - Fase 2,FE1 200,Instrumentacion,Presencial,FE2 202,8,"Conceptos Básicos
+Medición de Presión
+Medición de Nivel
+Medición de Flujo
+Medición de Temperatura
+Transmisores y Controladores",FE1 106,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 203,Facilidades de superficie - Fase 2,FE1 200,Medidores de flujo,Presencial,FE1 203,4,"Dimensionamiento
+Solución de Problemas
+Impacto de la Presencia de Gas
+Unidades LACT",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 204,Facilidades de superficie - Fase 2,FE1 200,Mantenimiento de Motores Electricos,Presencial,FE1 204,4,"1. Reciprocating
+  (Piston & Diaphragm)
+2. Rotary
+(Gears & Lobes & Screws) in deepthLeakage on valve seat in Control Valve
+CV & Leakage calculations
+Control Valve Troubleshooting
+Control Valve performance
+Back pressure valve pilots
+HP back pressure valves
+LP back pressure valves
+Liquid level control
+Setting the level controller
+Electronic level controllers
+Vee-ball actuators
+V150 vee-ball valves
+V-notch ball orientation
+V150 valve detail
+V150S slurry vee-ball
+V150 travel stops
+Valve applied to the asset",FE1 104,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 201,Operaciones de superficie - Fase 2,FE2 201,Confiabilidad,Presencial,FE2 201,8,"Integrating asset-based operational and reliability programs for excellence in operations.
+- Maintenance strategies that focus on preventive and proactive approaches, such as Operator-Driven Reliability (ODR).
+- Techniques for operators in equipment monitoring, maintenance, and performance improvement .
+- Safety and environmental considerations in operational reliability.
+- Importance of Data collection and analysis for tracking equipment performance and identifying improvement areas.
+- How to Implement a culture of continuous improvement and proactive problem-solving among operators
+How to adapt changes in operational conditions and integrating new equipment or technologies without disrupting existing processes.
+- How to maintain consistent performance and minimizing equipment degradation or failure.
+- How to overcome physical challenges such as limited visibility, adverse weather conditions, and site constraints in certain operations.
+- How to coordinate effectively with ground crew and other team members to ensure safety and efficiency.",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE1 202,Operaciones de superficie - Fase 2,FE2 201,Bombas,Presencial,FE1 202,4,"Dynamic Pumps
+(Centrifugal pumps) in deepth
+Positive displacement pumps
+NPSH Calculations
+Perfomance Evaluation
+Efficiency
+1. Reciprocating
+  (Piston & Diaphragm)
+2. Rotary
+(Gears & Lobes & Screws) in deepth","FE2 101
+FE2 102",,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 203,Operaciones de superficie - Fase 2,FE2 201,Digitalizacion,Presencial,FE2 203,4,"* Introduction to Industry 4.0 and digitalization in oil and gas
+* Advanced automation and control systems
+* Data management and analytics for surface equipment and operations",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 204,Operaciones de superficie - Fase 2,FE2 201,Oleoductos,Presencial,FE2 204,4,"Pipeline Construction Supervision
+Critical safeguard to be focused while pipeline construction
+Common issues and how to fix them",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FE2 205,Operaciones de superficie - Fase 2,FE2 201,Arranque y Parada de Emergencia,Presencial,FE2 205,4,"Arranque y Parada de Emergencia en Petróleo y Gas
+Procedimientos de Arranque
+Procedimientos de Parada de Emergencia
+Integración de Procedimientos de Arranque y Parada
+Evaluación de Riesgos",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 201,HSE - Fase 2,HSE 200,Principios de Seguridad de Procesos ,Presencial,HSE 201,12,"Introducción
+ropósito
+Aplicación Específica
+Eventos Significativos
+Módulo I: Normas de Referencia
+Módulo II: Definiciones y Terminologias
+Módulo III: Identificación de Peligros y Evaluación de Riesgos
+Módulo IV: Identificación de Peligros y Evaluación de Riesgos
+Módulo V: Elementos de Gestión de Seguridad de Procesos",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 202,HSE - Fase 2,HSE 200,Seguridad de Procesos para Operacion,Presencial,HSE 202,8,"Identificación y Evaluación de Riesgos​
+Especificación de Barreras​
+Identificación de Tareas Críticas​
+Manejo del Cambio (MOC)​
+Roles y Responsabilidades​
+Inspección Basada en Riesgos (RBI)​
+Gestión de la Corrosión​
+Gestión de la Integridad de Oleoductos​
+Desarrollo de Programa de Integridad Mecánica​
+Análisis de Confiabilidad, Disponibilidad y Mantenibilidad (RAM)",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 203,HSE - Fase 2,HSE 200,Seguridad de Procesos para Mantenimiento,Presencial,HSE 203,8,"Inspecciones y Pruebas (ITPM)​
+Integridad de Activos​
+Desarrollo de un Programa de Integridad Mecánica​
+Desarrollo de Programas para Tuberías de Alta Energía​
+Fundamentos de Ingeniería Forense​
+Mecánica de la Fractura: Fundamentos y Aplicaciones​
+Ensayo No Destructivo (NDT) para Gerentes​
+Gestión de Integridad de Activos e Inspección Basada en el Riesgo​
+Capacidad Operativa (FFS) para la Integridad de Tuberías de Petróleo y Gas",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 204,HSE - Fase 2,HSE 200,Seguridad de Procesos para HSE,Presencial,HSE 204,4,"Revisión de Seguridad Previa al Inicio (PSSR)​
+Procedimientos Operativos",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 205,HSE - Fase 2,HSE 200,Investigacion de Accidentes,Presencial,HSE 205,4,"Causa raíz
+¿Qué pasaría si...?
+Cadena de comunicación y registro de incidentes
+Identificación e investigación de incidentes
+Acciones de mejora y lecciones aprendidas",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+HSE 206,HSE - Fase 2,HSE 200,Sistema de comando de incidentes (ICS),Presencial,HSE 206,4,"Sistema de Comando de Incidentes en Petróleo y Gas​
+Implementación del Sistema de Comando de Incidentes​
+Sistema de Comando de Incidentes en la Práctica​
+Beneficios del Sistema de Comando de Incidentes",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 101,V&V,VV 100,"Cultura de OE, Autoridad Detener trabajo.",Presencial,VV 101,8,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 102,V&V,VV 100,Prácticas de Trabajo Seguro,Presencial,VV 102,16,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 103,V&V,VV 100,Verificacióny Validación V&V/ Gestión de Excelencia  Operacional de Contratistas,Presencial,VV 103,8,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 104,V&V,VV 100,Desempeño Humano Organizacional (HOP),Presencial,VV 104,12,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 105,V&V,VV 100,Coaching & Mentoring/ E-Color /,Presencial,VV 105,6,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 106,V&V,VV 100,Verificación de Inicio del Trabajo (VIT),Presencial,VV 106,4,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 107,V&V,VV 100, Field engagement ,Presencial,VV 107,4,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 108,V&V,VV 100,Compromisos del OE/Emergency ActionPlan ,Presencial,VV 108,8,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+VV 109,V&V,VV 100,Actividades de Campo y HES field engagement,Presencial,VV 109,8,,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+LIF 101,Izamiento critico,LIF 100,Izamiento Mecánico,Presencial,LIF 101,12,"Descripción General del Equipo
+Preparación de Planes de Izamiento
+Documentación y Ejecución ",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+ICS 101,Incident Command System,ICS 100,"Incident Command System
+(ICS)",Presencial,ICS 101,16,"1.	Introducción al NIMS y SCI :
+o	Presentación
+o	Principios básicos del NIMS.
+o	Relación entre el NIMS y el SCI.
+o	Importancia del SCI en instalaciones petroleras.
+2.	Estructura Organizacional del SCI:
+o	Funciones principales: Comando, Operaciones, Logística, Planificación y Finanzas/Administración.
+o	Roles gerenciales en el SCI.
+3.	Manejo de Recursos y Comunicaciones:
+o	Coordinación de recursos bajo el SCI.
+o	Planificación de comunicaciones en incidentes.
+4.	Planificación Estratégica:
+o	Manejo por objetivos y Plan de Acción del Incidente (PAI).
+o	Ejercicio práctico: Definición de objetivos estratégicos.
+5.	Comando Unificado y Coordinación Interinstitucional:
+o	Funcionamiento del Comando Unificado.
+o	Casos de estudio: Experiencias en la industria petrolera.
+6.	Transferencia de Mando y Conclusiones:
+o	Procedimientos para transferir el mando en el SCI.
+o	Reflexión sobre las lecciones aprendidas.
+7.	Simulación de Incidente:
+o	Ejercicio práctico: Respuesta inicial a un incidente en una instalación petrolera.
+o	Roles y responsabilidades
+8.	Cierre
+Evaluación, experiencias y cierre.",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+LW 101,Liderazgo,LW 100,Leadership workshop Phase 1,Presencial,LW 101,16,"Expectativas
+El estado actual de la seguridad en Latino América y en Venezuela
+Sistemas, Escenarios de alto riesgo y definir las Salvaguardas
+Qué es, cómo y cuándo se aplica la Autoridad para detener el Trabajo
+ VIT
+coaching tecnicas
+Practicas de comunicacion ",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FS 101,OE Supervisor de campo,FS 100,OE Leadership,Presencial,FS 101,40,"Dia 1: Cultura de OE, Autoridad Detener trabajo.
+Día 2 : Prácticas de Trabajo Seguro (PTS) (1/3)
+Día 3 : Prácticas de Trabajo Seguro (PTS) (2/3) Solo mediodía de 1:00 pm a 5:00pm
+Día 4 : Verificacióny Validación V&V/ Gestión de Excelencia
+            Operacional de Contratistas
+Día 5 : Prácticasde Trabajo Seguro (PTS) (3/3) parte 1",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FS 102,OE Supervisor de campo,FS 100,HSE Field Engament,Presencial,FS 102,40,Field Activities ,,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+FS 103,OE Supervisor de campo,FS 100,OE Leader Tools,Presencial,FS 103,40,"Dia 1: Desempeño Humano Organizacional. (1/3)
+Día 2 : Desempeño Humano Organizacional. (2/3) Practica tentativa
+Día 3 : Coaching & Mentoring/ E-Color /
+            Verificación de Inicio del Trabajo (VIT),
+Día 4 : Mañana: Desempeño Humano Organizacional. (3/3) / Field engagement Tarde: (PTS) (3/3 parte 2)
+Día 5 : Conocimientos Generales de la Locación Compromisos del OE             Emergency ActionPlan / Plan de equipo",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+IHE 101,Electricista calificado,IHE 100,Electricista calificado,Presencial,IHE 101,16,"Estándares de Trabajo Seguro en la Industria Eléctrica
+Dos Estándares Eléctricos Aplicados (Prácticas Reconocidas)
+Peligros asociados con la Electricidad
+Interacción con Equipos Eléctricos
+Trabajo Eléctrico Seguro
+Política de Líneas Eléctricas Aéreas",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Supervisión de Trabajos de Izamiento:,Presencial,,,"•	Planeacion
+•	Cálculo de Capacidad de Carga
+•	Desarrollo de Plan de Izamiento
+•	Criterios para Izamientos Críticos
+•	Criterios de Descarte para equipos y accesorios de Izamiento
+•	Gestión de Riesgo y salvaguardas para izamiento
+•	Otros",HSE 109,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Supervisión de Trabajos en Altura,Presencial,,,"•	Planeación
+•	Calculo de Espacio de Caída Libre
+•	Metodología para Inspección de armado de andamios
+•	Criterio de descarte de equipo y accesorios para trabajos en Altura
+•	Auto rescate
+•	Gestión de Riesgos y Salvaguardas para trabajos en Altura
+•	Otros",HSE 105,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Supervisión de Trabajos de excavación,Presencial,,,"•	Planeación
+•	Sistemas de protección para la excavación
+•	Diseño y Conformación de Taludes
+•	Inspección de áreas para excavación, uso de detectores
+•	Determinación de zonas de exclusión
+•	Gestión de Riesgos y Salvaguardas para Excavación
+•	Verificación de resistencia del suelo
+•	Otros",HSE 108,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Primeros Auxilios Nivel 2,Presencial,,,"•	Signos vitales
+•	RCP
+•	Manejo de Pacientes Politraumatizados
+•	Triaje
+•	Extricación
+•	Inmovilización y Traslado
+•	Otros",HSE 113,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Supervisión de Trabajos eléctricos,Presencial,,,"•	Reglas de Oro 
+•	Criterios de desenergizado y Aislamiento
+•	Gestion de Emergencias Eléctricas
+•	Planeacion","FE2 106
+HSE 104
+HSE 105",,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Supervisión de Trabajos en espacios confinados,Presencial,,,"•	Medición de Atmosferas 
+•	Planeación
+•	Métodos de trabajo 
+•	Recursos
+•	Análisis de quipos de respiración y suplidores de aire",HSE 102,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+,HSE - Fase 2,IHE 100,Gestión de Riesgos Nivel 2,Presencial,,,"•	Gestión de Peligros y Riesgos
+•	Clasificación de Áreas 
+•	Equipos de detección y medición
+•	Análisis de Salvaguardas (Bow Tie)
+•	Jerarquía de Controles
+•	Otros",HSE 100,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+COO 101,Condut of Operation,COO 100,Condut of Operation 1,Presencial,COO 101,,"Defined Operating Plan
+•Structured Operating Periods
+•V&V Activities
+•Roles & Responsibilities
+•Line of Sight Metrics/KPI’s
+•Employee engagement in all that we do
+
+Operating Procedures:
+ •Development, approval & control 
+•Maintaining & managing changes
+•Content requirements 
+•Accessibility & Use",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+COO 102,Condut of Operation,COO 100,Condut of Operation 2,Presencial,COO 102,,"Operations Routine Duties: 
+•Operations Equipment Monitoring
+•Operations Console Control Systems Management
+ 
+Manage Communications: 
+•Shift Communications
+•Start of Shift Meetings
+•Shift Turnover
+•Swing/Rotation Handover",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+COO 103,Condut of Operation,COO 100,Condut of Operation 3,Presencial,COO 103,,"Manage Process Boundaries:
+ •Alarm Management
+•Safe Operating Limits
+•Critical Process Variables
+•Abnormal situation recovery",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
+COO 104,Condut of Operation,COO 100,Condut of Operation 4,Presencial,COO 104,,"Critical Execution (Partnerships): •Control of Work (HSE)
+•Marine Standards (Marine BIN)
+•Fired Equipment Operations (FE BIN)
+•Competency (APPS)
+•Routine Well Work (Wells)
+•Surface Digital Platform",,,Instructor Certificado,Ingeniero con experiencia en sistemas de control e instrumentación.,"Instrumentación
+Medición
+P&ID"
