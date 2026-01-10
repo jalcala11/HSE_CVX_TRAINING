@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Trainings</title>
+    <title>Zona de Entrenamiento de Excelencia Operacional</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; background-color: #f5f5f5; }
@@ -65,7 +65,7 @@
         .section li { margin-bottom: 8px; }
         .cta-button { width: 100%; background-color: #0066cc; color: white; border: none; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 15px; }
         .cta-button:hover { background-color: #0052a3; }
-        .secondary-button { width: 100%; background-color: white; color: #0066cc; border: 2px solid #0066cc; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 10px; }
+        .secondary-button { width: 100%; background-color: white; color: #0066cc; border: 2px solid #0066cc; padding: 15px; border-radius: 4px; font-size: 16px; font-weight: 500; cursor: pointer; margin-top: 10px; display: block; text-align: center; text-decoration: none; box-sizing: border-box; }
         .secondary-button:hover { background-color: #f0f7ff; }
         .price { font-size: 28px; color: #003366; font-weight: bold; margin: 15px 0; }
         .schedule-list { list-style: none; margin-left: 0; }
@@ -74,6 +74,59 @@
         .schedule-location { color: #666; font-size: 14px; }
         .page-section { display: none; }
         .page-section.active { display: block; }
+        
+        /* Botón toggle para filtros en móviles */
+        .filter-toggle { display: none; background-color: #0066cc; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; font-weight: 500; margin-bottom: 15px; width: 100%; }
+        .filter-toggle:hover { background-color: #0052a3; }
+        
+        /* Media Queries para Responsive Design */
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; gap: 10px; padding: 15px 10px; }
+            .logo span { font-size: 18px; }
+            .logo svg { width: 30px; height: 30px; }
+            .search-box { max-width: 100%; margin: 10px 0 0 0; }
+            .search-box input { font-size: 16px; padding: 12px; }
+            
+            .nav-container { padding: 0 10px; }
+            .breadcrumb-container { padding: 0 10px; font-size: 13px; }
+            
+            .content-wrapper { flex-direction: column; gap: 15px; padding: 0 10px; margin: 15px auto; }
+            
+            /* Filtros sidebar - oculto por defecto en móvil */
+            .filters-sidebar { width: 100%; display: none; }
+            .filters-sidebar.active { display: block; }
+            .filter-toggle { display: block; }
+            .filter-card { padding: 15px; }
+            
+            .products-header { padding: 12px 15px; font-size: 14px; }
+            
+            /* Tarjetas de productos */
+            .product-card { flex-direction: column; gap: 15px; padding: 15px; align-items: flex-start; }
+            .product-info h3 { font-size: 16px; }
+            .product-meta { flex-wrap: wrap; gap: 8px; font-size: 13px; }
+            .view-details-btn { width: 100%; }
+            
+            /* Página de detalles */
+            .course-header { padding: 20px 15px; }
+            .course-title { font-size: 24px; }
+            .course-meta { flex-wrap: wrap; gap: 10px; font-size: 13px; }
+            
+            .content-grid { grid-template-columns: 1fr; gap: 15px; }
+            .main-content { padding: 20px 15px; }
+            .info-card { padding: 20px 15px; }
+            
+            .section h2 { font-size: 20px; }
+            .section p, .section ul { font-size: 14px; }
+            
+            .info-row { flex-direction: column; gap: 5px; }
+            .info-value { text-align: left; }
+        }
+        
+        @media (max-width: 480px) {
+            .logo span { font-size: 16px; }
+            .course-title { font-size: 20px; }
+            .section h2 { font-size: 18px; }
+        }
     </style>
 </head>
 <body>
@@ -82,9 +135,9 @@
             <a onclick="showHome()" class="logo">
                 <svg width="40" height="40" viewBox="0 0 40 40">
                     <circle cx="20" cy="20" r="18" fill="white"/>
-                    <text x="20" y="26" text-anchor="middle" font-size="20" fill="#003366" font-weight="bold">DT</text>
+                    <text x="20" y="26" text-anchor="middle" font-size="20" fill="#003366" font-weight="bold">ZEEO</text>
                 </svg>
-                <span style="font-size: 24px; font-weight: bold; margin-left: 10px;">Demo Trainings</span>
+                <span style="font-size: 24px; font-weight: bold; margin-left: 10px;">Zona de Entrenamiento de Excelencia Operacional</span>
             </a>
             <div class="search-box">
                 <input type="text" id="search-input" placeholder="Buscar cursos, entrenamientos y más" oninput="searchCourses()">
@@ -100,7 +153,9 @@
         </div>
 
         <div class="content-wrapper">
-            <aside class="filters-sidebar">
+            <button class="filter-toggle" onclick="toggleFilters()">🔍 Mostrar Filtros</button>
+            
+            <aside class="filters-sidebar" id="filters-sidebar">
                 <div class="filter-card">
                     <h3>Categoría</h3>
                     <div class="filter-group" id="category-filters">
@@ -160,7 +215,7 @@
 
                 <aside class="sidebar-info">
                     <div class="info-card" id="card-information"></div>
-                    <div class="info-card" id="card-schedules"></div>
+                 <!--   <div class="info-card" id="card-schedules"></div> -->
                     <div class="info-card" id="card-instructor"></div>
                 </aside>
             </div>
@@ -171,105 +226,144 @@
         // Variable global para almacenar los cursos
         let coursesData = {};
 
-        // Función auxiliar para parsear CSV
-        function parseCSVLine(line) {
-            const result = [];
-            let current = '';
+        // Función para parsear CSV correctamente (maneja saltos de línea dentro de campos)
+        function parseCSV(csvText) {
+            const rows = [];
+            let currentRow = [];
+            let currentField = '';
             let insideQuotes = false;
-            
-            for (let i = 0; i < line.length; i++) {
-                const char = line[i];
-                const nextChar = line[i + 1];
+            let i = 0;
+
+            while (i < csvText.length) {
+                const char = csvText[i];
                 
                 if (char === '"') {
-                    if (insideQuotes && nextChar === '"') {
-                        current += '"';
-                        i++;
+                    if (insideQuotes && csvText[i + 1] === '"') {
+                        currentField += '"';
+                        i += 2;
+                        continue;
                     } else {
                         insideQuotes = !insideQuotes;
+                        i++;
+                        continue;
                     }
-                } else if (char === ',' && !insideQuotes) {
-                    result.push(current.trim());
-                    current = '';
-                } else {
-                    current += char;
+                }
+                
+                if (char === ',' && !insideQuotes) {
+                    currentRow.push(currentField.replace(/"/g, '').trim());
+                    currentField = '';
+                    i++;
+                    continue;
+                }
+                
+                if ((char === '\n' || char === '\r') && !insideQuotes) {
+                    if (currentField || currentRow.length > 0) {
+                        currentRow.push(currentField.replace(/"/g, '').trim());
+                        if (currentRow.some(f => f)) {
+                            rows.push(currentRow);
+                        }
+                        currentRow = [];
+                        currentField = '';
+                    }
+                    if (char === '\r' && csvText[i + 1] === '\n') {
+                        i += 2;
+                    } else {
+                        i++;
+                    }
+                    continue;
+                }
+                
+                currentField += char;
+                i++;
+            }
+            
+            if (currentField || currentRow.length > 0) {
+                currentRow.push(currentField.replace(/"/g, '').trim());
+                if (currentRow.some(f => f)) {
+                    rows.push(currentRow);
                 }
             }
-            result.push(current.trim());
-            return result;
+            
+            return rows;
         }
 
-        // Función para procesar CSV y llenar coursesData
+        // Función para procesar CSV y llenar coursesData con el nuevo esquema de columnas
         function processCSVData(csvText) {
-            const lines = csvText.split('\n').map(line => line.trim()).filter(line => line);
-            
-            if (lines.length < 2) throw new Error('CSV vacío o sin datos');
-            
-            const headers = parseCSVLine(lines[0]).map(h => h.toLowerCase().replace(/"/g, ''));
+            const rows = parseCSV(csvText);
+            if (rows.length < 2) throw new Error('CSV vacío o sin datos');
+
+            // Normaliza encabezados eliminando acentos, espacios y caracteres especiales
+            const normalizeKey = (text = '') => text
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, '');
+
+            const headers = rows[0].map(h => normalizeKey(h));
             coursesData = {};
-            
-            for (let i = 1; i < lines.length; i++) {
-                const values = parseCSVLine(lines[i]);
-                if (values.length < 2 || !values[0]) continue;
+
+            const getValue = (values, key) => {
+                const idx = headers.indexOf(key);
+                if (idx === -1) return '';
+                return (values[idx] || '').trim();
+            };
+
+            const splitToList = (text) => {
+                if (!text) return [];
+                const hasNewlines = /\r|\n/.test(text);
+                const separator = hasNewlines ? /\r?\n/ : ';';
+                return text
+                    .split(separator)
+                    .map(v => v.trim())
+                    .filter(Boolean);
+            };
+
+            for (let i = 1; i < rows.length; i++) {
+                const values = rows[i];
+                if (!values || values.every(v => !v || !v.trim())) continue;
+
+                const rawCategory = getValue(values, 'categoria');
+                const rawCategoryCode = getValue(values, 'codigocategoria');
+                const rawTitle = getValue(values, 'cursos');
+                const rawCourseCode = getValue(values, 'codidocurso');
+                const rawDuration = getValue(values, 'duracionhoras') || getValue(values, 'duracion');
+                const rawTopics = getValue(values, 'temasdelcurso');
+                const rawAudience = getValue(values, 'aquienestadirigido');
+                const rawDescription = getValue(values, 'descripciondelcurso') || getValue(values, 'descripcion');
+                const rawLearnings = getValue(values, 'loqueaprenderas');
                 
-                const course = {};
-                headers.forEach((header, index) => {
-                    let value = (values[index] || '').replace(/"/g, '').trim();
-                    
-                    // Convertir campos con saltos de línea en arrays
-                    if (['topics', 'whoshouldattend', 'tags'].some(k => header.includes(k))) {
-                        // Dividir por saltos de línea O por punto y coma
-                        const separator = value.includes('\n') ? '\n' : ';';
-                        course[header] = value ? value.split(separator).map(v => v.trim()).filter(v => v) : [];
-                    } else {
-                        course[header] = value;
-                    }
-                });
-                
-                if (course.id) {
-                    // Extraer category del program (ej: "HSE - Fase 1" -> "HSE")
-                    // Manejar casos como "Facilidades de superficie (FE1) - Fase 1" -> "FE1"
-                    let category = 'General';
-                    const programStr = course.program || '';
-                    
-                    // Buscar patrón entre paréntesis: (FE1), (FE2), (SS), etc.
-                    const parenthesesMatch = programStr.match(/\(([A-Z]+\d*)\)/);
-                    if (parenthesesMatch) {
-                        category = parenthesesMatch[1];
-                    } else {
-                        // Buscar al inicio: HSE, FE1, SS, etc.
-                        const startMatch = programStr.match(/^([A-Z]+\d*)/);
-                        if (startMatch) {
-                            category = startMatch[1];
-                        }
-                    }
-                    
-                    // Generar overview desde los primeros 3-5 topics si existen
-                    const overviewText = Array.isArray(course.topics) && course.topics.length > 0
-                        ? course.topics.slice(0, Math.min(5, course.topics.length)).join(', ')
-                        : 'Curso de capacitación especializada.';
-                    
-                    coursesData[course.id] = {
-                        id: course.id,
-                        title: course.title || '',
-                        category: category || course.program,
-                        program: course.program || '',
-                        programCode: course.programcode || '',
-                        format: course.format || 'Presencial',
-                        duration: course.duration || '',
-                        courseCode: course.coursecode || '',
-                        overview: [overviewText],
-                        learnings: [],
-                        whoShouldAttend: course.whoshouldattend || [],
-                        prerequisites: course.prerequisites || 'Ninguno',
-                        topics: course.topics || [],
-                        instructor: {
-                            name: course.instructor_name || 'Instructor Certificado',
-                            bio: course.instructor_bio || ''
-                        },
-                        tags: course.tags || []
-                    };
+                // Debug: imprimir datos de la primera fila
+                if (i === 1) {
+                    console.log('Headers:', headers);
+                    console.log('Valores fila 1:', {
+                        rawCategory, rawCategoryCode, rawTitle, rawCourseCode, 
+                        rawDuration, rawTopics, rawAudience, rawDescription, rawLearnings
+                    });
                 }
+
+                const courseId = rawCourseCode || rawTitle || `curso-${i}`;
+                const durationText = rawDuration ? `${rawDuration} horas` : '';
+
+                coursesData[courseId] = {
+                    id: courseId,
+                    title: rawTitle || courseId,
+                    category: rawCategory || 'General',
+                    program: rawCategory || rawCategoryCode || 'Programa',
+                    programCode: rawCategoryCode || '',
+                    format: 'Presencial',
+                    duration: durationText,
+                    courseCode: rawCourseCode || courseId,
+                    overview: rawDescription ? [rawDescription] : ['Curso de capacitación especializada.'],
+                    learnings: splitToList(rawLearnings),
+                    whoShouldAttend: splitToList(rawAudience),
+                    prerequisites: 'Ninguno',
+                    topics: splitToList(rawTopics),
+                    instructor: {
+                        name: 'Instructor Certificado',
+                        bio: ''
+                    },
+                    tags: [rawCategoryCode, rawCategory].filter(Boolean)
+                };
             }
         }
 
@@ -291,12 +385,17 @@
             const loadPromise = (async () => {
                 const response = await fetch(csvUrl);
                 if (!response.ok) throw new Error(`GitHub error: ${response.status}`);
-                const csvText = await response.text();
+                
+                // Obtener como ArrayBuffer y decodificar explícitamente como UTF-8
+                const buffer = await response.arrayBuffer();
+                const decoder = new TextDecoder('utf-8');
+                let csvText = decoder.decode(buffer);
+                
                 if (!csvText || csvText.length < 10) throw new Error('Respuesta vacía o inválida');
                 processCSVData(csvText);
             })();
             
-            await withTimeout(loadPromise, 3000);
+            await withTimeout(loadPromise, 5000);
             console.log(`✅ ${Object.keys(coursesData).length} cursos cargados desde GitHub`);
         }
 
@@ -338,6 +437,54 @@
             });
         }
 
+        // Función para obtener icono según formato
+        function getFormatIcon(format) {
+            const formatLower = (format || '').toLowerCase();
+            if (formatLower.includes('presencial')) return '👤';
+            if (formatLower.includes('virtual')) return '💻';
+            if (formatLower.includes('hibrido') || formatLower.includes('híbrido')) return '🔄';
+            return '📖';
+        }
+
+        // Función para obtener icono según categoría
+        function getCategoryIcon(category) {
+            const catLower = (category || '').toLowerCase();
+            if (catLower.includes('fe1') || catLower.includes('fe2') || catLower.includes('facilidades')) return '🏭';
+            if (catLower.includes('hse')) return '⚠️';
+            if (catLower.includes('ss') || catLower.includes('subsuelo')) return '🛢️';
+            if (catLower.includes('vv')) return '✓';
+            if (catLower.includes('liderazgo') || catLower.includes('lw') || catLower.includes('leadership')) return '👔';
+            if (catLower.includes('lif') || catLower.includes('izamiento')) return '🔧';
+            if (catLower.includes('ics') || catLower.includes('incident')) return '🚨';
+            if (catLower.includes('fs') || catLower.includes('campo')) return '🏗️';
+            if (catLower.includes('ihe') || catLower.includes('electricista')) return '⚡';
+            if (catLower.includes('coo') || catLower.includes('operation') || catLower.includes('conducta')) return '📋';
+            return '📚';
+        }
+
+        // Construir enlace mailto con borrador de correo para el curso
+        function buildContactMailto(course) {
+            const to = 'oetraining@chevron.com';
+            const subject = `Consulta curso: ${course.title} (${course.courseCode || course.id})`;
+            const bodyLines = [
+                'Hola equipo HSE,',
+                '',
+                'Estoy interesado(a) en el siguiente curso:',
+                `• Título: ${course.title}`,
+                `• Código: ${course.courseCode || course.id}`,
+                `• Categoría: ${course.category}`,
+                `• Programa: ${course.program}`,
+                `• Formato: ${course.format}`,
+                `• Duración: ${course.duration}`,
+                '',
+                '¿Podrían indicarme próximas fechas, disponibilidad y el proceso de inscripción?',
+                '',
+                'Gracias.'
+            ];
+            const mailto = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+            return mailto;
+        }
+
         // Renderizar cursos al cargar la página
         function renderCourses() {
             const coursesList = document.getElementById('courses-list');
@@ -349,13 +496,18 @@
                 card.dataset.category = course.category;
                 card.dataset.format = course.format;
                 
+                const formatIcon = getFormatIcon(course.format);
+                const categoryIcon = getCategoryIcon(course.category);
+                
                 card.innerHTML = `
                     <div class="product-info">
                         <h3>${course.title}</h3>
                         <div class="product-meta">
-                            <span>📚 ${course.category}</span>
+                            <span>${categoryIcon} ${course.category}</span>
                             <span>|</span>
-                            <span>${course.duration}</span>
+                            <span>${formatIcon} ${course.format}</span>
+                            <span>|</span>
+                            <span>⏱ ${course.duration}</span>
                         </div>
                     </div>
                     <button class="view-details-btn" onclick="showDetails('${course.id}')">Ver Detalles</button>
@@ -423,6 +575,13 @@
             applyFilters();
         }
 
+        function toggleFilters() {
+            const sidebar = document.getElementById('filters-sidebar');
+            const button = document.querySelector('.filter-toggle');
+            sidebar.classList.toggle('active');
+            button.textContent = sidebar.classList.contains('active') ? '✕ Ocultar Filtros' : '🔍 Mostrar Filtros';
+        }
+
         function searchCourses() {
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             const cards = document.querySelectorAll('#courses-list .product-card');
@@ -455,18 +614,21 @@
             document.getElementById('breadcrumb-title').textContent = course.title;
             document.getElementById('breadcrumb-category').textContent = course.category;
 
-            document.getElementById('course-meta').innerHTML = `<span>📚 ${course.format}</span><span>|</span><span>${course.category}</span><span>|</span><span>⏱ ${course.duration}</span>`;
+            const formatIcon = getFormatIcon(course.format);
+            const categoryIcon = getCategoryIcon(course.category);
+            document.getElementById('course-meta').innerHTML = `<span>${categoryIcon} ${course.category}</span><span>|</span><span>${formatIcon} ${course.format}</span><span>|</span><span>⏱ ${course.duration}</span>`;
             document.getElementById('course-tags').innerHTML = course.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
 
             document.getElementById('section-overview').innerHTML = `<h2>Descripción del Curso</h2>${course.overview.map(p => `<p>${p}</p>`).join('')}`;
-            document.getElementById('section-learnings').innerHTML = `<h2>Lo que Aprenderás</h2><ul>${course.learnings.map(item => `<li>${item}</li>`).join('')}</ul>`;
-            document.getElementById('section-audience').innerHTML = `<h2>A Quién Está Dirigido</h2><p>Este curso está diseñado para:</p><ul>${course.whoShouldAttend.map(item => `<li>${item}</li>`).join('')}</ul>`;
+            document.getElementById('section-learnings').innerHTML = course.learnings && course.learnings.length > 0 ? `<h2>Lo que Aprenderás</h2><ul>${course.learnings.map(item => `<li>${item}</li>`).join('')}</ul>` : '';
+            document.getElementById('section-audience').innerHTML = course.whoShouldAttend && course.whoShouldAttend.length > 0 ? `<h2>A Quién Está Dirigido</h2><p>Este curso está diseñado para:</p><ul>${course.whoShouldAttend.map(item => `<li>${item}</li>`).join('')}</ul>` : '';
             document.getElementById('section-prerequisites').innerHTML = `<h2>Prerequisitos</h2><p>${course.prerequisites}</p>`;
             document.getElementById('section-topics').innerHTML = course.topics && course.topics.length > 0 ? `<h2>Temas del Curso</h2><ul>${course.topics.map(item => typeof item === 'string' ? `<li>${item}</li>` : `<li><strong>${item.day}:</strong> ${item.topic}</li>`).join('')}</ul>` : '';
 
-            document.getElementById('card-information').innerHTML = `<h3>Información del Curso</h3><div class="info-row"><span class="info-label">Duración:</span><span class="info-value">${course.duration}</span></div><div class="info-row"><span class="info-label">Formato:</span><span class="info-value">${course.format}</span></div><div class="info-row"><span class="info-label">Código:</span><span class="info-value">${course.courseCode}</span></div><div class="info-row"><span class="info-label">Programa:</span><span class="info-value">${course.program}</span></div><button class="secondary-button">Contáctanos</button>`;
+            const contactHref = buildContactMailto(course);
+            document.getElementById('card-information').innerHTML = `<h3>Información del Curso</h3><div class="info-row"><span class="info-label">Duración:</span><span class="info-value">${course.duration}</span></div><div class="info-row"><span class="info-label">Formato:</span><span class="info-value">${course.format}</span></div><div class="info-row"><span class="info-label">Código:</span><span class="info-value">${course.courseCode}</span></div><div class="info-row"><span class="info-label">Programa:</span><span class="info-value">${course.program}</span></div><a class="secondary-button" href="${contactHref}">Contáctanos</a>`;
 
-            document.getElementById('card-schedules').innerHTML = '';
+          //  document.getElementById('card-schedules').innerHTML = '';
 
             document.getElementById('card-instructor').innerHTML = `<h3>Instructor</h3><p style="color: #333; line-height: 1.6;"><strong>${course.instructor.name}</strong><br>${course.instructor.bio}</p>`;
 
