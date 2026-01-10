@@ -239,10 +239,12 @@
                 
                 if (char === '"') {
                     if (insideQuotes && csvText[i + 1] === '"') {
+                        // Comillas escapadas dentro de un campo
                         currentField += '"';
                         i += 2;
                         continue;
                     } else {
+                        // Inicio o fin de un campo entrecomillado
                         insideQuotes = !insideQuotes;
                         i++;
                         continue;
@@ -250,15 +252,17 @@
                 }
                 
                 if (char === ',' && !insideQuotes) {
-                    currentRow.push(currentField.replace(/"/g, '').trim());
+                    // Fin de campo
+                    currentRow.push(currentField.trim());
                     currentField = '';
                     i++;
                     continue;
                 }
                 
                 if ((char === '\n' || char === '\r') && !insideQuotes) {
+                    // Fin de fila
                     if (currentField || currentRow.length > 0) {
-                        currentRow.push(currentField.replace(/"/g, '').trim());
+                        currentRow.push(currentField.trim());
                         if (currentRow.some(f => f)) {
                             rows.push(currentRow);
                         }
@@ -273,12 +277,14 @@
                     continue;
                 }
                 
+                // Agregar carácter al campo actual
                 currentField += char;
                 i++;
             }
             
+            // Procesar el último campo/fila
             if (currentField || currentRow.length > 0) {
-                currentRow.push(currentField.replace(/"/g, '').trim());
+                currentRow.push(currentField.trim());
                 if (currentRow.some(f => f)) {
                     rows.push(currentRow);
                 }
