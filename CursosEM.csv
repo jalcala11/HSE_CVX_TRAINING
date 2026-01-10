@@ -1,5 +1,5 @@
-﻿Categoria,Codigo categoria,Cursos,Codido Curso,Duracion (horas),Temas del Curso,A Quién Está Dirigido,Descripción del Curso,Lo que Aprenderás
-"Seguridad, Higiene y Ambiente",HSE,Planificacion para la Ejecución de Trabajo Seguro,HSE 116,24,"Introduccion?: ¿Cómo hemos llegado hasta aquí?
+﻿Categoria,Codigo categoria,Cursos,Codido Curso,Duracion (horas),Temas del Curso,A Quién Está Dirigido,Descripción del Curso,Lo que Aprenderás,
+"Seguridad, Higiene y Ambiente",HSE,Planificacion para la Ejecución de Trabajo Seguro,HSE 116,24,"Introduccion​: ¿Cómo hemos llegado hasta aquí?
 Comentarios recibidos de la empresa y cómo se ha implementado
 Marco:  ¿Qué logrará el Marco de planificacion?
 Un resumen detallado del Marco y su integración en el ciclo de  Gestión del Trabajo Seguro
@@ -10,7 +10,7 @@ Recursos
 ","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El Marco Planificación para la Ejecución de Trabajo Seguro fue creado como una capa adicional al Ciclo de Gestión del Trabajo existente, con el objetivo de reducir lesiones graves y fatalidades en toda las Empresas Mixtas. Este marco estandariza las mejores prácticas en la planificación de trabajos de alto riesgo, define roles y responsabilidades claros, e integra de manera más efectiva la retroalimentación y las lecciones aprendidas, enfocándose en una ejecución segura para mejorar la seguridad.
 Esta capacitación incluye herramientas detalladas para guiar y fortalecer la planificación para la ejecucion de trabajo seguro.","Esta capacitación está alineada con la normativa PDVSA de procedimientos de trabajo (SI-S-20), análisis de riesgo del trabajo (IR–S–17) y sistema de permisos de trabajo (IR-S-04). Esta proporcionará a los empleados de Operaciones, otras áreas y socios comerciales el conocimiento y los recursos necesarios para cumplir con sus responsabilidades dentro del Marco de Planificación para la Ejecución de Trabajo Seguro. Para más información sobre de Gestión del Trabajo, también está disponible las capacitaciones de prácticas de trabajo seguro. 
 
- "
+ ",
 "Seguridad, Higiene y Ambiente",HSE,Operaciones simultaneas (SIMOPs),HSE 117,8,"Conceptos Básicos
 Representante de Operaciones Simultáneas
 ¿Cuándo se necesita un Plan de Operaciones Simultáneas?
@@ -33,19 +33,19 @@ Flujograma de Operaciones Simultáneas
 Matriz de Operaciones Simultáneas (Macollas) – Petropiar
 Ejemplo de flujo de trabajo
 Ejemplos de matrices SIMOPS
-Guías para Compartir Espacios de Trabajo","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Las SIMOPS (operaciones simultáneas) son dos o más actividades realizadas por diferentes grupos que ocurren al mismo tiempo y que, debido a su proximidad, podrían impactarse entre sí. Los requisitos de SIMOPS están diseñados para gestionar posibles conflictos, riesgos y peligros mediante una planificación, comunicación y ejecución efectivas de dos o más actividades concurrentes en el mismo lugar, área de trabajo o flujo de proceso, donde existe el potencial de paradas no planificadas, lesiones al personal, daños a la propiedad e impactos ambientales adversos.","Comprender los requisitos de las SIMOPs, realizar, participar y evaluar las SIMOPs para garantizar que las operaciones se lleven a cabo sin lesiones, sin daños a la propiedad y sin impacto ambiental adverso, así como comprender su rol y responsabilidades dentro del Estándar de SIMOPs."
-Facilidades de superficie,FE1,Separadores,FE1 101,8,"Principios de funcionamiento?
-Variables de proceso a controlar?
-Salvaguardar típicas de estos sistemas?
-Mantenimiento?
-Tratadores y emulsiones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para proporcionar a los participantes una comprensión integral sobre los separadores utilizados en la industria petrolera. Se abordan los principios de funcionamiento, las variables de proceso que deben controlarse, las salvaguardas típicas de estos sistemas, el mantenimiento adecuado y el manejo de tratadores y emulsiones. El contenido está orientado a profesionales de operaciones y mantenimiento que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Al finalizar el curso, el participante será capaz de identificar los principios operativos de los separadores, controlar las variables clave del proceso, aplicar salvaguardas para garantizar la seguridad, realizar tareas de mantenimiento preventivo y correctivo, y gestionar tratadores y emulsiones de manera eficiente. Esto permitirá optimizar la operación y el mantenimiento de los sistemas, contribuyendo a la seguridad y eficiencia de las instalaciones."
-Facilidades de superficie,FE1,Tanques,FE1 102,8,"Tipos de tanques?
-Salvaguardas para tanques de HC?
-Seguridad?
-Problemas comunes en los tanques?
-Uso de tablas API?
-Medición de tanques?
-Medición automática de tanques ","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está orientado a brindar a los participantes conocimientos fundamentales sobre los diferentes tipos de tanques utilizados en la industria petrolera. Se abordan temas como las salvaguardas para tanques de hidrocarburos, aspectos de seguridad, problemas comunes, el uso de tablas API y métodos de medición, incluyendo la medición automática de tanques. El contenido está dirigido a profesionales de operaciones y mantenimiento que requieren operar y mantener instalaciones de manera segura y eficiente.","Al finalizar el curso, el participante será capaz de identificar los distintos tipos de tanques y sus aplicaciones, aplicar salvaguardas y medidas de seguridad, reconocer y resolver problemas frecuentes, utilizar correctamente las tablas API y realizar mediciones precisas, tanto manuales como automáticas. Esto permitirá optimizar la gestión y el mantenimiento de los tanques, contribuyendo a la seguridad y eficiencia operativa."
+Guías para Compartir Espacios de Trabajo","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Las SIMOPS (operaciones simultáneas) son dos o más actividades realizadas por diferentes grupos que ocurren al mismo tiempo y que, debido a su proximidad, podrían impactarse entre sí. Los requisitos de SIMOPS están diseñados para gestionar posibles conflictos, riesgos y peligros mediante una planificación, comunicación y ejecución efectivas de dos o más actividades concurrentes en el mismo lugar, área de trabajo o flujo de proceso, donde existe el potencial de paradas no planificadas, lesiones al personal, daños a la propiedad e impactos ambientales adversos.","Comprender los requisitos de las SIMOPs, realizar, participar y evaluar las SIMOPs para garantizar que las operaciones se lleven a cabo sin lesiones, sin daños a la propiedad y sin impacto ambiental adverso, así como comprender su rol y responsabilidades dentro del Estándar de SIMOPs.",
+Facilidades de superficie,FE1,Separadores,FE1 101,8,"Principios de funcionamiento​
+Variables de proceso a controlar​
+Salvaguardar típicas de estos sistemas​
+Mantenimiento​
+Tratadores y emulsiones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para proporcionar a los participantes una comprensión integral sobre los separadores utilizados en la industria petrolera. Se abordan los principios de funcionamiento, las variables de proceso que deben controlarse, las salvaguardas típicas de estos sistemas, el mantenimiento adecuado y el manejo de tratadores y emulsiones. El contenido está orientado a profesionales de operaciones y mantenimiento que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Al finalizar el curso, el participante será capaz de identificar los principios operativos de los separadores, controlar las variables clave del proceso, aplicar salvaguardas para garantizar la seguridad, realizar tareas de mantenimiento preventivo y correctivo, y gestionar tratadores y emulsiones de manera eficiente. Esto permitirá optimizar la operación y el mantenimiento de los sistemas, contribuyendo a la seguridad y eficiencia de las instalaciones.",
+Facilidades de superficie,FE1,Tanques,FE1 102,8,"Tipos de tanques​
+Salvaguardas para tanques de HC​
+Seguridad​
+Problemas comunes en los tanques​
+Uso de tablas API​
+Medición de tanques​
+Medición automática de tanques ","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está orientado a brindar a los participantes conocimientos fundamentales sobre los diferentes tipos de tanques utilizados en la industria petrolera. Se abordan temas como las salvaguardas para tanques de hidrocarburos, aspectos de seguridad, problemas comunes, el uso de tablas API y métodos de medición, incluyendo la medición automática de tanques. El contenido está dirigido a profesionales de operaciones y mantenimiento que requieren operar y mantener instalaciones de manera segura y eficiente.","Al finalizar el curso, el participante será capaz de identificar los distintos tipos de tanques y sus aplicaciones, aplicar salvaguardas y medidas de seguridad, reconocer y resolver problemas frecuentes, utilizar correctamente las tablas API y realizar mediciones precisas, tanto manuales como automáticas. Esto permitirá optimizar la gestión y el mantenimiento de los tanques, contribuyendo a la seguridad y eficiencia operativa.",
 "Seguridad, Higiene y Ambiente",HSE,Excelencia Operacional Básico,HSE 101,40,"Conceptos básicos: Peligro, Riesgo, Acto y condicion insegura
 Seguridad y Salvaguardas
 Expectativas de Excelencia Operacional
@@ -54,21 +54,21 @@ Autoridad para detener el trabajo
 Principios operacionales
 Lista de Verificación para el Inicio del Trabajo (VIT)
 Practicas de trabajo seguro
-Rueda de identificación de peligros",Todos los trabajadores deben recibir este entrenamiento ,"Este curso está diseñado para introducir a los participantes en los conceptos fundamentales de la excelencia operacional en la industria petrolera. Se abordan temas clave como la identificación de peligros, la gestión de riesgos, las prácticas de trabajo seguro, el sentido de vulnerabilidad y la autoridad para detener el trabajo. El programa enfatiza la importancia de la seguridad de procesos y el cumplimiento de estándares internacionales, promoviendo una cultura de prevención y mejora continua.","El participante comprenderá los principios operacionales esenciales, aprenderá a identificar y gestionar peligros en el entorno laboral, aplicar prácticas de trabajo seguro y utilizar herramientas como la lista de verificación para el inicio del trabajo (VIT). Además, desarrollará competencias para fomentar una cultura de seguridad, reconocer situaciones de riesgo y ejercer la autoridad para detener actividades cuando sea necesario, contribuyendo al bienestar organizacional y a la excelencia operacional."
+Rueda de identificación de peligros",Todos los trabajadores deben recibir este entrenamiento ,"Este curso está diseñado para introducir a los participantes en los conceptos fundamentales de la excelencia operacional en la industria petrolera. Se abordan temas clave como la identificación de peligros, la gestión de riesgos, las prácticas de trabajo seguro, el sentido de vulnerabilidad y la autoridad para detener el trabajo. El programa enfatiza la importancia de la seguridad de procesos y el cumplimiento de estándares internacionales, promoviendo una cultura de prevención y mejora continua.","El participante comprenderá los principios operacionales esenciales, aprenderá a identificar y gestionar peligros en el entorno laboral, aplicar prácticas de trabajo seguro y utilizar herramientas como la lista de verificación para el inicio del trabajo (VIT). Además, desarrollará competencias para fomentar una cultura de seguridad, reconocer situaciones de riesgo y ejercer la autoridad para detener actividades cuando sea necesario, contribuyendo al bienestar organizacional y a la excelencia operacional.",
 Facilidades de superficie,FE1,Analisis de fallas de equipos rotativos,FE1 201,4,"Introducción al Análisis de Fallas
 Tipos de Fallas en Equipos Rotativos
 Técnicas de Análisis de Fallas
 Análisis de Causa Raíz
 Acciones Correctivas y Preventivas
-Documentación e Informes","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso ofrece una visión integral sobre el análisis de fallas en equipos rotativos, abordando metodologías modernas para identificar causas raíz y prevenir paradas no programadas. A través de conceptos prácticos y casos reales, los participantes aprenderán a aplicar técnicas de diagnóstico, interpretar indicadores de condición y optimizar la confiabilidad operacional. Ideal para profesionales que buscan fortalecer sus competencias en mantenimiento predictivo y gestión de activos críticos.","Al finalizar el curso, podrás diagnosticar y prevenir fallas en bombas, compresores, ventiladores y otros equipos rotativos mediante un enfoque práctico y basado en datos. Aprenderás a interpretar señales de condición (vibración, temperatura, ruido, lubricación), identificar modos y causas raíz (desbalance, desalineación, holguras, cavitación, resonancia, defectos de rodamiento), y aplicar herramientas estructuradas de análisis (RCA, árbol de fallas, Pareto). Desarrollarás criterios para definir acciones correctivas y planes de mantenimiento predictivo, optimizarás la confiabilidad y disponibilidad de activos críticos, y establecerás indicadores (MTBF/MTTR, tasa de falla) y estándares de reporte que conecten los hallazgos del diagnóstico con decisiones operativas y de inversión."
-Facilidades de superficie,FE1,Valvulas de control,FE2 202,4,"Cálculos de Fugas de Válvulas de Control?
-Solución de Problemas de Válvulas de Control?
+Documentación e Informes","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso ofrece una visión integral sobre el análisis de fallas en equipos rotativos, abordando metodologías modernas para identificar causas raíz y prevenir paradas no programadas. A través de conceptos prácticos y casos reales, los participantes aprenderán a aplicar técnicas de diagnóstico, interpretar indicadores de condición y optimizar la confiabilidad operacional. Ideal para profesionales que buscan fortalecer sus competencias en mantenimiento predictivo y gestión de activos críticos.","Al finalizar el curso, podrás diagnosticar y prevenir fallas en bombas, compresores, ventiladores y otros equipos rotativos mediante un enfoque práctico y basado en datos. Aprenderás a interpretar señales de condición (vibración, temperatura, ruido, lubricación), identificar modos y causas raíz (desbalance, desalineación, holguras, cavitación, resonancia, defectos de rodamiento), y aplicar herramientas estructuradas de análisis (RCA, árbol de fallas, Pareto). Desarrollarás criterios para definir acciones correctivas y planes de mantenimiento predictivo, optimizarás la confiabilidad y disponibilidad de activos críticos, y establecerás indicadores (MTBF/MTTR, tasa de falla) y estándares de reporte que conecten los hallazgos del diagnóstico con decisiones operativas y de inversión.",
+Facilidades de superficie,FE1,Valvulas de control,FE2 202,4,"Cálculos de Fugas de Válvulas de Control​
+Solución de Problemas de Válvulas de Control​
 Desempeño de Válvulas de Control
-Aplicaciones Comunes en una Instalación de Producción de Petróleo y Gas?","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Válvulas de control está diseñado para proporcionar a los participantes los conocimientos fundamentales sobre el funcionamiento, tipos y aplicaciones de las válvulas de control en instalaciones de petróleo y gas. Se abordan los principios de operación, procedimientos de mantenimiento preventivo y solución de problemas, así como el desempeño de estos equipos en contextos industriales.","Quienes completen este curso serán capaces de:
+Aplicaciones Comunes en una Instalación de Producción de Petróleo y Gas​","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Válvulas de control está diseñado para proporcionar a los participantes los conocimientos fundamentales sobre el funcionamiento, tipos y aplicaciones de las válvulas de control en instalaciones de petróleo y gas. Se abordan los principios de operación, procedimientos de mantenimiento preventivo y solución de problemas, así como el desempeño de estos equipos en contextos industriales.","Quienes completen este curso serán capaces de:
 Comprender los principios de funcionamiento y las aplicaciones más comunes de las válvulas de control.
 Identificar y aplicar procedimientos de mantenimiento preventivo.
 Realizar cálculos de fugas y evaluar el desempeño de las válvulas.
-Diagnosticar y resolver problemas operativos, optimizando la eficiencia y seguridad de los sistemas donde se emplean."
+Diagnosticar y resolver problemas operativos, optimizando la eficiencia y seguridad de los sistemas donde se emplean.",
 Facilidades de superficie,FE1,Medidores,FE1 203,4,"Dimensionamiento
 Solución de Problemas
 Impacto de la Presencia de Gas
@@ -76,48 +76,48 @@ Unidades LACT","Operaciones, mantenimiento y otros profesionales que requieren c
 Dimensionar y seleccionar medidores adecuados para diferentes aplicaciones.
 Identificar y resolver problemas comunes en sistemas de medición.
 Analizar el impacto de la presencia de gas en la precisión de las mediciones.
-Operar y mantener unidades LACT, asegurando la confiabilidad de los datos obtenidos."
-Facilidades de superficie,FE1,Mantenimiento de Motores Electricos,FE1 204,4,"Introducción al Mantenimiento de Motores Eléctricos?
-Tipos de Motores Eléctricos?
-Prácticas de Mantenimiento?
-Soluciones de Problemas Comunes en los Motores?
+Operar y mantener unidades LACT, asegurando la confiabilidad de los datos obtenidos.",
+Facilidades de superficie,FE1,Mantenimiento de Motores Electricos,FE1 204,4,"Introducción al Mantenimiento de Motores Eléctricos​
+Tipos de Motores Eléctricos​
+Prácticas de Mantenimiento​
+Soluciones de Problemas Comunes en los Motores​
 Consideraciones de Seguridad","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Mantenimiento de motores eléctricos está orientado a proporcionar los conocimientos fundamentales sobre los diferentes tipos de motores eléctricos, sus prácticas de mantenimiento y las soluciones a problemas comunes. Se abordan aspectos clave como la identificación de fallas, procedimientos de mantenimiento preventivo y consideraciones de seguridad para garantizar la operación eficiente y segura de los equipos.","Reconocer los distintos tipos de motores eléctricos y sus aplicaciones.
 Aplicar prácticas de mantenimiento preventivo y correctivo.
 Identificar y resolver problemas frecuentes en motores eléctricos.
-Implementar medidas de seguridad durante la operación y el mantenimiento de los equipos."
-Operaciones de superficie,FE2,Confiabilidad,FE2 201,8,"Estrategias de mantenimiento centradas en enfoques preventivos y proactivos?
-Técnicas para operadores en monitoreo de equipos, mantenimiento y mejora del rendimiento?
-Consideraciones de seguridad y ambientales en la fiabilidad operativa?
-Importancia de la recopilación y el análisis de datos para rastrear el rendimiento del equipo e identificar áreas de mejora?
-¿Cómo implementar una cultura de mejora continua y resolución proactiva de problemas entre los operadores??
-¿Cómo adaptarse a los cambios en las condiciones operativas e integrar nuevos equipos o tecnologías sin interrumpir los procesos existentes??
-¿Cómo mantener un rendimiento consistente y minimizar la degradación o falla del equipo??
-¿Cómo superar desafíos físicos como la visibilidad limitada, condiciones climáticas adversas y restricciones en el sitio en ciertas operaciones??
-¿Cómo coordinar de manera efectiva con el equipo en tierra y otros miembros del equipo para asegurar seguridad y eficiencia??","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Confiabilidad está enfocado en estrategias de mantenimiento preventivo y proactivo, técnicas para el monitoreo y mejora del rendimiento de equipos, y consideraciones de seguridad y ambientales en la operación industrial. Se abordan la importancia de la recopilación y análisis de datos, la implementación de una cultura de mejora continua y la coordinación efectiva entre equipos para asegurar la seguridad y eficiencia operacional.","Implementar estrategias de mantenimiento centradas en la prevención y la proactividad.
+Implementar medidas de seguridad durante la operación y el mantenimiento de los equipos.",
+Operaciones de superficie,FE2,Confiabilidad,FE2 201,8,"Estrategias de mantenimiento centradas en enfoques preventivos y proactivos​
+Técnicas para operadores en monitoreo de equipos, mantenimiento y mejora del rendimiento​
+Consideraciones de seguridad y ambientales en la fiabilidad operativa​
+Importancia de la recopilación y el análisis de datos para rastrear el rendimiento del equipo e identificar áreas de mejora​
+¿Cómo implementar una cultura de mejora continua y resolución proactiva de problemas entre los operadores?​
+¿Cómo adaptarse a los cambios en las condiciones operativas e integrar nuevos equipos o tecnologías sin interrumpir los procesos existentes?​
+¿Cómo mantener un rendimiento consistente y minimizar la degradación o falla del equipo?​
+¿Cómo superar desafíos físicos como la visibilidad limitada, condiciones climáticas adversas y restricciones en el sitio en ciertas operaciones?​
+¿Cómo coordinar de manera efectiva con el equipo en tierra y otros miembros del equipo para asegurar seguridad y eficiencia?​","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Confiabilidad está enfocado en estrategias de mantenimiento preventivo y proactivo, técnicas para el monitoreo y mejora del rendimiento de equipos, y consideraciones de seguridad y ambientales en la operación industrial. Se abordan la importancia de la recopilación y análisis de datos, la implementación de una cultura de mejora continua y la coordinación efectiva entre equipos para asegurar la seguridad y eficiencia operacional.","Implementar estrategias de mantenimiento centradas en la prevención y la proactividad.
 Utilizar técnicas de monitoreo y análisis de datos para identificar áreas de mejora en el rendimiento de equipos.
 Adaptarse a cambios operativos e integrar nuevas tecnologías sin afectar procesos existentes.
 Mantener un desempeño consistente y minimizar la degradación o falla de los equipos.
-Superar desafíos físicos y coordinar eficazmente con el equipo para garantizar la seguridad y eficiencia."
-Operaciones de superficie,FE2,Bombas,FE1 202,4,"Tipos de Bombas?
-Componentes y Diseño de Bombas?
-Criterios de Selección de las Bombas?
-Rendimiento y Operación de las Bombas?
+Superar desafíos físicos y coordinar eficazmente con el equipo para garantizar la seguridad y eficiencia.",
+Operaciones de superficie,FE2,Bombas,FE1 202,4,"Tipos de Bombas​
+Componentes y Diseño de Bombas​
+Criterios de Selección de las Bombas​
+Rendimiento y Operación de las Bombas​
 Operación y Control de Bombas","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Bombas está enfocado en el estudio de los diferentes tipos de bombas utilizadas en la industria, sus componentes y criterios de selección, así como el análisis de rendimiento y operación. Se abordan aspectos clave como la operación y control de bombas, permitiendo a los participantes comprender el funcionamiento y la eficiencia de estos equipos en entornos industriales.","Identificar los distintos tipos de bombas y sus componentes principales.
 Aplicar criterios de selección adecuados para cada aplicación.
 Evaluar el rendimiento y la eficiencia de las bombas.
-Operar y controlar bombas de manera segura y eficiente, optimizando los procesos industriales."
-Operaciones de superficie,FE2,Digitalizacion,FE2 203,4,"Introducción a la Industria 4.0 y la Digitalización en Petróleo y Gas?
-Sistemas Avanzados de Automatización y Control?
+Operar y controlar bombas de manera segura y eficiente, optimizando los procesos industriales.",
+Operaciones de superficie,FE2,Digitalizacion,FE2 203,4,"Introducción a la Industria 4.0 y la Digitalización en Petróleo y Gas​
+Sistemas Avanzados de Automatización y Control​
 Gestión de Datos y Análisis para Equipos y Operaciones en Superficie","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Digitalización introduce a los participantes en los conceptos clave de la Industria 4.0 y la transformación digital en el sector de petróleo y gas. Se exploran sistemas avanzados de automatización y control, así como la gestión y el análisis de datos para equipos y operaciones en superficie, permitiendo comprender cómo la tecnología optimiza procesos y mejora la eficiencia operacional.","Comprender los fundamentos de la digitalización y su impacto en la industria energética.
 Identificar y aplicar sistemas avanzados de automatización y control.
 Gestionar y analizar datos operativos para mejorar la toma de decisiones y la eficiencia de los equipos.
-Reconocer oportunidades para implementar soluciones digitales que optimicen procesos industriales."
-Operaciones de superficie,FE2,Oleoductos,FE2 204,4,"Supervisión de construcción de oleoductos?
-Salvaguardas críticas durante la construcción de oleoductos?
-Problemas comunes y cómo resolverlos?
+Reconocer oportunidades para implementar soluciones digitales que optimicen procesos industriales.",
+Operaciones de superficie,FE2,Oleoductos,FE2 204,4,"Supervisión de construcción de oleoductos​
+Salvaguardas críticas durante la construcción de oleoductos​
+Problemas comunes y cómo resolverlos​
 Mantenimiento e inspección de los oleoductos y líneas de producción.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Oleoductos está orientado a la supervisión de la construcción de oleoductos, abordando las salvaguardas críticas durante el proceso constructivo, los problemas comunes que pueden surgir y las mejores prácticas para su resolución. Además, se cubren aspectos clave sobre el mantenimiento e inspección de oleoductos y líneas de producción, asegurando la integridad y eficiencia operativa en la industria petrolera.","Supervisar eficazmente la construcción de oleoductos, identificando y aplicando salvaguardas críticas.
 Reconocer y resolver problemas comunes durante la construcción y operación de oleoductos.
-Implementar procedimientos de mantenimiento e inspección para garantizar la seguridad y confiabilidad de las líneas de producción."
+Implementar procedimientos de mantenimiento e inspección para garantizar la seguridad y confiabilidad de las líneas de producción.",
 Operaciones de superficie,FE2,Arranque y Parada de Emergencia,FE2 205,4,"Arranque y Parada de Emergencia en Petróleo y Gas
 Procedimientos de Arranque
 Procedimientos de Parada de Emergencia
@@ -125,7 +125,7 @@ Integración de Procedimientos de Arranque y Parada
 Evaluación de Riesgos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","El curso de Arranque y Parada de Emergencia está orientado a proporcionar los conocimientos fundamentales sobre los procedimientos de arranque y parada de emergencia en operaciones de petróleo y gas. Se abordan los pasos críticos para la integración de procedimientos, la evaluación de riesgos y las mejores prácticas para garantizar la seguridad y la continuidad operativa en situaciones imprevistas.","Aplicar procedimientos seguros de arranque y parada de emergencia.
 Integrar protocolos de emergencia en los procesos operativos.
 Evaluar riesgos asociados y tomar decisiones informadas en situaciones críticas.
-Contribuir a la protección de personas, equipos y medio ambiente durante eventos de emergencia."
+Contribuir a la protección de personas, equipos y medio ambiente durante eventos de emergencia.",
 Seguridad de procesos,PSM,Principios de Seguridad de Procesos ,HSE 201,12,"Introducción
 Propósito
 Aplicación Específica
@@ -137,10 +137,10 @@ Módulo IV: Identificación de Peligros y Evaluación de Riesgos
 Módulo V: Elementos de Gestión de Seguridad de Procesos","Operaciones,  mantenimiento y SIHAO","El curso de Principios de Seguridad de Procesos proporciona una visión integral sobre los fundamentos, normas y mejores prácticas para la gestión segura de procesos en la industria. Se abordan temas como la identificación de peligros, evaluación de riesgos, elementos clave de la gestión de seguridad de procesos y la aplicación de estándares internacionales, con el objetivo de fortalecer la cultura de seguridad y prevenir incidentes operacionales.","Comprender los conceptos y terminología esenciales de la seguridad de procesos.
 Identificar peligros y evaluar riesgos en operaciones industriales.
 Aplicar los elementos fundamentales de la gestión de seguridad de procesos.
-Integrar normas y mejores prácticas para la prevención de incidentes y la mejora continua de la seguridad operacional."
+Integrar normas y mejores prácticas para la prevención de incidentes y la mejora continua de la seguridad operacional.",
 "Seguridad, Higiene y Ambiente",HSE,Supervision de Trabajos de Izamiento Mecánico,LIF 101,12,"Descripción General del Equipo
 Preparación de Planes de Izamiento
-Documentación y Ejecución ","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso proporciona una visión integral sobre la supervisión de operaciones de izamiento mecánico en entornos industriales. Abarca desde la descripción general de los equipos utilizados, la preparación de planes de izamiento, hasta la documentación y ejecución segura de las maniobras. El enfoque está en la gestión de riesgos, el cumplimiento normativo y la aplicación de mejores prácticas para garantizar la seguridad y eficiencia en las actividades de izaje, dirigido a personal de operaciones, mantenimiento y áreas relacionadas.","El participante desarrollará competencias para identificar los equipos y accesorios adecuados para izamiento, planificar y supervisar maniobras críticas, aplicar criterios de descarte de equipos, gestionar riesgos asociados y documentar correctamente cada operación. Además, adquirirá herramientas para la toma de decisiones seguras y la implementación de salvaguardas, contribuyendo a la prevención de incidentes y al cumplimiento de estándares de seguridad industrial."
+Documentación y Ejecución ","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso proporciona una visión integral sobre la supervisión de operaciones de izamiento mecánico en entornos industriales. Abarca desde la descripción general de los equipos utilizados, la preparación de planes de izamiento, hasta la documentación y ejecución segura de las maniobras. El enfoque está en la gestión de riesgos, el cumplimiento normativo y la aplicación de mejores prácticas para garantizar la seguridad y eficiencia en las actividades de izaje, dirigido a personal de operaciones, mantenimiento y áreas relacionadas.","El participante desarrollará competencias para identificar los equipos y accesorios adecuados para izamiento, planificar y supervisar maniobras críticas, aplicar criterios de descarte de equipos, gestionar riesgos asociados y documentar correctamente cada operación. Además, adquirirá herramientas para la toma de decisiones seguras y la implementación de salvaguardas, contribuyendo a la prevención de incidentes y al cumplimiento de estándares de seguridad industrial.",
 "Seguridad, Higiene y Ambiente",HSE,Sistema de comando de incidentes (ICS),ICS 101,16,"Introducción al NIMS y SCI
 Estructura Organizacional del SCI
 Funciones principales
@@ -154,19 +154,19 @@ Ejercicio práctico: Definición de objetivos estratégicos
 Comando Unificado y Coordinación Interinstitucional: Funcionamiento del Comando Unificado y Casos de estudio: Experiencias en la industria petrolera.
 Transferencia de Mando y Conclusiones
 Simulación de Incidente
-Evaluación, experiencias y cierre","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para capacitar al personal en la implementación y gestión del Sistema de Comando de Incidentes (SCI) en la industria petrolera. El programa aborda los principios fundamentales del SCI, su estructura organizacional, la coordinación de recursos y comunicaciones, la planificación estratégica y la gestión de incidentes. Se incluyen ejercicios prácticos y casos de estudio para fortalecer la toma de decisiones y la respuesta efectiva ante situaciones críticas.","El participante adquirirá conocimientos para aplicar el SCI en la gestión de emergencias, coordinar equipos multidisciplinarios, planificar acciones estratégicas y documentar incidentes. Además, desarrollará habilidades para liderar la respuesta inicial, transferir el mando de manera segura y evaluar lecciones aprendidas, contribuyendo a la mejora continua de la seguridad operacional."
+Evaluación, experiencias y cierre","Todas las gerencias ejecutoras, tecnicas y SIHAO y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para capacitar al personal en la implementación y gestión del Sistema de Comando de Incidentes (SCI) en la industria petrolera. El programa aborda los principios fundamentales del SCI, su estructura organizacional, la coordinación de recursos y comunicaciones, la planificación estratégica y la gestión de incidentes. Se incluyen ejercicios prácticos y casos de estudio para fortalecer la toma de decisiones y la respuesta efectiva ante situaciones críticas.","El participante adquirirá conocimientos para aplicar el SCI en la gestión de emergencias, coordinar equipos multidisciplinarios, planificar acciones estratégicas y documentar incidentes. Además, desarrollará habilidades para liderar la respuesta inicial, transferir el mando de manera segura y evaluar lecciones aprendidas, contribuyendo a la mejora continua de la seguridad operacional.",
 "Seguridad, Higiene y Ambiente",HSE,Liderazgo,LW 101,16,"Expectativas
 El estado actual de la seguridad en Latino América y en Venezuela
 Sistemas, Escenarios de alto riesgo y definir las Salvaguardas
 Qué es, cómo y cuándo se aplica la Autoridad para detener el Trabajo
  VIT
 coaching tecnicas
-Practicas de comunicacion ",Lideres de la Empresa Mixta,"Este curso de liderazgo está orientado a fortalecer las competencias de gestión y dirección en el sector petrolero. A través de un enfoque práctico, se abordan las expectativas del liderazgo, el estado actual de la seguridad en Latinoamérica y Venezuela, la gestión de escenarios de alto riesgo, la aplicación de salvaguardas y la autoridad para detener el trabajo. El programa incluye técnicas de coaching, prácticas de comunicación y herramientas para el desarrollo de líderes en empresas mixtas, promoviendo una cultura de excelencia operacional y seguridad.","El participante adquirirá habilidades para liderar equipos en entornos complejos, gestionar riesgos operacionales, aplicar criterios de seguridad y comunicación efectiva, y tomar decisiones responsables en situaciones críticas. Además, desarrollará competencias para implementar prácticas de liderazgo que contribuyan al bienestar organizacional y al cumplimiento de los estándares de seguridad industrial."
+Practicas de comunicacion ",Lideres de la Empresa Mixta,"Este curso de liderazgo está orientado a fortalecer las competencias de gestión y dirección en el sector petrolero. A través de un enfoque práctico, se abordan las expectativas del liderazgo, el estado actual de la seguridad en Latinoamérica y Venezuela, la gestión de escenarios de alto riesgo, la aplicación de salvaguardas y la autoridad para detener el trabajo. El programa incluye técnicas de coaching, prácticas de comunicación y herramientas para el desarrollo de líderes en empresas mixtas, promoviendo una cultura de excelencia operacional y seguridad.","El participante adquirirá habilidades para liderar equipos en entornos complejos, gestionar riesgos operacionales, aplicar criterios de seguridad y comunicación efectiva, y tomar decisiones responsables en situaciones críticas. Además, desarrollará competencias para implementar prácticas de liderazgo que contribuyan al bienestar organizacional y al cumplimiento de los estándares de seguridad industrial.",
 "Seguridad, Higiene y Ambiente",HSE,Herramientas de Liderazgo en Excelencia Operacional,FS 101,40,"Cultura de OE, Autoridad Detener trabajo.
  Prácticas de Trabajo Seguro (PTS) 
 Desempeño Humano Organizacional
 Verificacióny Validación V&V/ Gestión de Excelencia Operacional de Contratistas
-",Lideres de la Empresa Mixta,"Este curso está enfocado en el desarrollo de competencias de liderazgo orientadas a la excelencia operacional en la industria petrolera. El programa aborda la cultura de excelencia operacional, la autoridad para detener el trabajo, prácticas de trabajo seguro, desempeño humano organizacional y la gestión de contratistas. Se incluyen técnicas de verificación y validación, así como herramientas para fortalecer la gestión y el liderazgo en equipos de alto desempeño, promoviendo una cultura de seguridad y mejora continua.","El participante adquirirá habilidades para implementar prácticas de liderazgo que fomenten la excelencia operacional, gestionar equipos de manera efectiva, aplicar criterios de seguridad y comunicación, y utilizar herramientas de verificación y validación para asegurar el cumplimiento de estándares. Además, desarrollará competencias para liderar procesos de mejora continua y gestionar contratistas bajo criterios de excelencia."
+",Lideres de la Empresa Mixta,"Este curso está enfocado en el desarrollo de competencias de liderazgo orientadas a la excelencia operacional en la industria petrolera. El programa aborda la cultura de excelencia operacional, la autoridad para detener el trabajo, prácticas de trabajo seguro, desempeño humano organizacional y la gestión de contratistas. Se incluyen técnicas de verificación y validación, así como herramientas para fortalecer la gestión y el liderazgo en equipos de alto desempeño, promoviendo una cultura de seguridad y mejora continua.","El participante adquirirá habilidades para implementar prácticas de liderazgo que fomenten la excelencia operacional, gestionar equipos de manera efectiva, aplicar criterios de seguridad y comunicación, y utilizar herramientas de verificación y validación para asegurar el cumplimiento de estándares. Además, desarrollará competencias para liderar procesos de mejora continua y gestionar contratistas bajo criterios de excelencia.",
 PDVSA Certificaciones,PDVCER,Control de fuentes de energia - LOTO,PDVCER 5,8,"MODULO I (Mañana)
 Origen del control de fuente de energía (LOTO).
 LOTO como herramienta de comunicacion.
@@ -183,46 +183,46 @@ Retiro de los dispositivos de aislamiento  y aseguramiento.
 MODULO II (Tarde)
 Ejercicios prácticos en aula para la aplicación de dispositivo de aislamiento y aseguramiento.
 Eercicios en area operacional o simulador.
-Evaluacinón de conocimientos teorica.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para certificar a los participantes en el control seguro de fuentes de energía mediante la aplicación de procedimientos de bloqueo y etiquetado (LOTO). Se abordan los fundamentos legales y normativos, los tipos de energía peligrosas, los dispositivos de aislamiento y aseguramiento, así como las responsabilidades y roles involucrados. El programa incluye ejercicios prácticos y simulaciones para garantizar la correcta implementación de LOTO en ambientes operacionales, promoviendo la seguridad y la prevención de accidentes laborales.","El participante aprenderá a identificar fuentes de energía peligrosas, seleccionar y aplicar dispositivos de aislamiento y aseguramiento, ejecutar procedimientos de bloqueo y etiquetado, y reconocer los roles y responsabilidades en el proceso LOTO. Además, desarrollará habilidades para realizar ejercicios prácticos en campo y evaluar el cumplimiento de los procedimientos, contribuyendo a la protección personal y colectiva en el entorno laboral."
-Facilidades de superficie,FE1,Combustión y Evaluación de Hornos,FE1 103,8,"Tipos de hornos?
-Secciones del horno?
-Combustión?
-Quemadores?
-Variables operacionales ?
-Seguridad en los hornos?
-Problemas Operacionales ?
-Procedimiento a seguir para encender un horno?
-Ejercicios","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Válvulas de control,FE1 104,8,"Introduccion?
-Principios de funcionamiento de las válvulas de control?
-Tipos de válvulas de control?
-Procedimientos de mantenimiento preventivo de válvulas de control","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Compresores,FE1 105,8,"Sistema de Aire comprimido?
-Compresores y sus aplicaciones?
-Tipos de compresores?
-Tratamiento del aire?
-Salvaguarda compresores de aire comprimido?
-Compresores de gas natural?
-Compresores de simple y doble efecto?
-Componentes de compresores reciprocantes?
-Seguridad en las operaciones ?
-Procedimiento de arranque?
-Mantenimiento","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Operaciones de oleoductos,FE 106,4,"Vista general de tuberías?
-Procedimiento para la trampa de lanzamiento y recepción de cochino.?
-Flujo multifásico?
-Mantenimiento de válvulas?
-Problemas de integridad típicos?
-Como identificar el rating de tuberías y su diseño","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Integridad de Activos y Ensayos No Destructivos,FE 107,4,"Fenómenos de Corrosión comunes y sus consecuencias.?
-Importancia del RBI?
-Falla de los materiales.?
+Evaluacinón de conocimientos teorica.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.","Este curso está diseñado para certificar a los participantes en el control seguro de fuentes de energía mediante la aplicación de procedimientos de bloqueo y etiquetado (LOTO). Se abordan los fundamentos legales y normativos, los tipos de energía peligrosas, los dispositivos de aislamiento y aseguramiento, así como las responsabilidades y roles involucrados. El programa incluye ejercicios prácticos y simulaciones para garantizar la correcta implementación de LOTO en ambientes operacionales, promoviendo la seguridad y la prevención de accidentes laborales.","El participante aprenderá a identificar fuentes de energía peligrosas, seleccionar y aplicar dispositivos de aislamiento y aseguramiento, ejecutar procedimientos de bloqueo y etiquetado, y reconocer los roles y responsabilidades en el proceso LOTO. Además, desarrollará habilidades para realizar ejercicios prácticos en campo y evaluar el cumplimiento de los procedimientos, contribuyendo a la protección personal y colectiva en el entorno laboral.",
+Facilidades de superficie,FE1,Combustión y Evaluación de Hornos,FE1 103,8,"Tipos de hornos​
+Secciones del horno​
+Combustión​
+Quemadores​
+Variables operacionales ​
+Seguridad en los hornos​
+Problemas Operacionales ​
+Procedimiento a seguir para encender un horno​
+Ejercicios","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Válvulas de control,FE1 104,8,"Introduccion​
+Principios de funcionamiento de las válvulas de control​
+Tipos de válvulas de control​
+Procedimientos de mantenimiento preventivo de válvulas de control","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Compresores,FE1 105,8,"Sistema de Aire comprimido​
+Compresores y sus aplicaciones​
+Tipos de compresores​
+Tratamiento del aire​
+Salvaguarda compresores de aire comprimido​
+Compresores de gas natural​
+Compresores de simple y doble efecto​
+Componentes de compresores reciprocantes​
+Seguridad en las operaciones ​
+Procedimiento de arranque​
+Mantenimiento","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Operaciones de oleoductos,FE 106,4,"Vista general de tuberías​
+Procedimiento para la trampa de lanzamiento y recepción de cochino.​
+Flujo multifásico​
+Mantenimiento de válvulas​
+Problemas de integridad típicos​
+Como identificar el rating de tuberías y su diseño","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Integridad de Activos y Ensayos No Destructivos,FE 107,4,"Fenómenos de Corrosión comunes y sus consecuencias.​
+Importancia del RBI​
+Falla de los materiales.​
 Visión general de los END.
-Tipos de END?
-Selección de END.?
-Estándares?
-Integridad mecánica de equipos estáticos y rotativos.?
-Inspección en marcha de equipos y en parada","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Tipos de END​
+Selección de END.​
+Estándares​
+Integridad mecánica de equipos estáticos y rotativos.​
+Inspección en marcha de equipos y en parada","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Facilidades de superficie,FE1,Instrumentacion,FE1 108,8,"Definición
 Instrumentación
 Variables
@@ -232,97 +232,97 @@ Escalas
 Factores de medición
 Medidores
 Simbología de instrumentación
-Lectura de planos P&ID","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Lectura de planos P&ID","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Facilidades de superficie,FE1,Operadores de produccion de Campo,FE 109,8,"Rol del operador
-?Estabilización del crudo
-?Manejo de Diluente en CPF??
-Gas de servicio?
-?Sistema de venteo??
-Manejo de químicos?
-Sistema de Control de Incendios?
-Sistema de proporcionador de espuma?
-Sistema de detección de fuego","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Corrosion y emisiones,FE110,4,"Corrosión ?
-Mecanismos de protección ?
-Fallas en los recubrimientos ?
-Fuentes de emisiones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Medidores de flujo,FE 111,4,"Medición de flujo?
+​Estabilización del crudo
+​Manejo de Diluente en CPF​​
+Gas de servicio​
+​Sistema de venteo​​
+Manejo de químicos​
+Sistema de Control de Incendios​
+Sistema de proporcionador de espuma​
+Sistema de detección de fuego","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Corrosion y emisiones,FE110,4,"Corrosión ​
+Mecanismos de protección ​
+Fallas en los recubrimientos ​
+Fuentes de emisiones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Medidores de flujo,FE 111,4,"Medición de flujo​
 Medición de tanques
-Medición automática de tanques?
-Medidores Coriolis?
-Medidor de flujo de vórtice?
-LACT","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Facilidades de superficie,FE1,Pruebas de pozos,FE112,4,"Introducción a las pruebas de pozos?
+Medición automática de tanques​
+Medidores Coriolis​
+Medidor de flujo de vórtice​
+LACT","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Facilidades de superficie,FE1,Pruebas de pozos,FE112,4,"Introducción a las pruebas de pozos​
 Rangos de presión en las pruebas de pozos
-Colectores de prueba?
-Separador de prueba?
-Depuración?
-Procedimiento/tiempos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Operaciones de superficie,FE2,Bombas,FE2 101,8,"Tipos de bombas ?
+Colectores de prueba​
+Separador de prueba​
+Depuración​
+Procedimiento/tiempos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Operaciones de superficie,FE2,Bombas,FE2 101,8,"Tipos de bombas ​
 Succión y descarga de las bombas
-Bombas Booster?
-Bombas de desplazamiento positivo?
-Bombas centrífugas?
-Principios de funcionamiento de las bombas.?
-Parámetros de operación y control de bombas.?
-Sistemas de seguridad para bombas?
-Problemas comunes de bombas y soluciones?
-Mantenimiento y cuidado de bombas","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Bombas Booster​
+Bombas de desplazamiento positivo​
+Bombas centrífugas​
+Principios de funcionamiento de las bombas.​
+Parámetros de operación y control de bombas.​
+Sistemas de seguridad para bombas​
+Problemas comunes de bombas y soluciones​
+Mantenimiento y cuidado de bombas","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Operaciones de superficie,FE2,Bombas: Mantenimiento,FE2 102,8,"Efectos de la cavitación
 Erosión del material
 Vibraciones
 Ruidos y golpes
 Disminución de la eficiencia
-Comunicación entre turnos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Operaciones de superficie,FE2,Mechurrios,FE2 103,8,"Principios de funcionamiento?
-?Depurador del mechurrio?
-Mechurrio y combustores??
-Parámetros de operación y control?
-Factores que afectan su desempeño?
-Mantenimiento y Seguridad?
-?Regulación Ambiental","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Comunicación entre turnos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Operaciones de superficie,FE2,Mechurrios,FE2 103,8,"Principios de funcionamiento​
+​Depurador del mechurrio​
+Mechurrio y combustores​​
+Parámetros de operación y control​
+Factores que afectan su desempeño​
+Mantenimiento y Seguridad​
+​Regulación Ambiental","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Operaciones de superficie,FE2,Variadores de Frecuencia (VFD),FE2 104,8,"Principios de funcionamiento
 Campos de aplicación
 Variables de control
 Instalación y pruebas
 Interpretación de resultados
-Mantenimiento.?
-Problemas y soluciones.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Operaciones de superficie,FE2,Telemetria,FE2 105,8,"Telemetría?
-?Operaciones de ductos
-Aspectos claves?
-PLC ?
-Sistema SCADA (Supervisory Control And Data).?
-Sistemas SCADA y los DCS.?
-?Recolección de Datos?
-Aplicaciones en La Industria de Oleoductos Y Gasoductos.?
-Control de procesos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Operaciones de superficie,FE2,Electricidad en Operaciones de Petróleo y Gas,FE2 106,4,"Introducción?
+Mantenimiento.​
+Problemas y soluciones.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Operaciones de superficie,FE2,Telemetria,FE2 105,8,"Telemetría​
+​Operaciones de ductos
+Aspectos claves​
+PLC ​
+Sistema SCADA (Supervisory Control And Data).​
+Sistemas SCADA y los DCS.​
+​Recolección de Datos​
+Aplicaciones en La Industria de Oleoductos Y Gasoductos.​
+Control de procesos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Operaciones de superficie,FE2,Electricidad en Operaciones de Petróleo y Gas,FE2 106,4,"Introducción​
 Fuentes de electricidad
-Equipos Eléctricos?
-Actividades peligrosas?
-Torres eléctricas?
-Clasificación de las áreas eléctricas?
-Arco Eléctrico?
-Mantenimiento adecuado?
-Riesgos de electricidad viva","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Operaciones de superficie,FE2,Terminales de almacenamiento de crudo,FE2 107,4,"Operación de Terminales de Almacenamiento de Crudo?
-Seguridad en el Almacenamiento de Petróleo?
-Preocupaciones de Seguridad en Almacenamiento de Petróleo?
-Medidas de Seguridad?
-Impacto Ambiental del Almacenamiento de Petróleo Crudo?
-Marco Regulatorio?
-Mejores Prácticas para la Protección Ambiental","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Equipos Eléctricos​
+Actividades peligrosas​
+Torres eléctricas​
+Clasificación de las áreas eléctricas​
+Arco Eléctrico​
+Mantenimiento adecuado​
+Riesgos de electricidad viva","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Operaciones de superficie,FE2,Terminales de almacenamiento de crudo,FE2 107,4,"Operación de Terminales de Almacenamiento de Crudo​
+Seguridad en el Almacenamiento de Petróleo​
+Preocupaciones de Seguridad en Almacenamiento de Petróleo​
+Medidas de Seguridad​
+Impacto Ambiental del Almacenamiento de Petróleo Crudo​
+Marco Regulatorio​
+Mejores Prácticas para la Protección Ambiental","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Operaciones de superficie,FE2,Sistemas de gestión de quemadores (BMS),FE2 108,4,"Funcionamiento 
 Navegacion
 Introduccion a las pantallas del BMS
-Vision general de los estados operativos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Vision general de los estados operativos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Operaciones de superficie,FE2,Solucion de problemas se separadores,FE2 109,4,"Problemas de operacion del separador
 Valvula de descarga atascada
 Salida de fluidos por la linea de gas
 Problemas comunes con la placa de orificio
 Problemas comunes con el patín de soporte del compresor
-Ventilación de tanques","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Ventilación de tanques","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Operaciones de superficie,FE2,Principios de Corrosión,FE2 110,4,"Concepto de corrosion
 Factores que afectan la corrosion
 Principio de proteccion catodica
@@ -332,64 +332,64 @@ Anodos de sacrificio
 Corriente impresa
 Revestimiento y proteccion catodica
 Bridas de aislacion y resistencia
-Interferencia","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Sistemas de Levantamiento Artificial    (BES/BCP/BM),SS 101,8,"Introducción al Sistema de Levantamiento Artificial?
-Bombeo Electrosumergible (BES)?
-Bomba de Cavidad Progresiva (BCP)?
-Bombeo Mecánico (BM / ROD PUMP)","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Interferencia","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Sistemas de Levantamiento Artificial    (BES/BCP/BM),SS 101,8,"Introducción al Sistema de Levantamiento Artificial​
+Bombeo Electrosumergible (BES)​
+Bomba de Cavidad Progresiva (BCP)​
+Bombeo Mecánico (BM / ROD PUMP)","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Subsuelo,SS,Optimizacion y Subsuelo (Diluyente),SS 102,4,"Diluent.
 Injection rate adjustment
 Monitoring of artificial lift systems.
- Preventive maintenance.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Optimización y Subsuelo? (Monitoreo – Mantenimiento),SS 102,4,"Monitoreo de los Sistemas de Levantamiento Artificial. ??
-Mantenimiento Preventivo y Correctivo de Sistemas de Levantamiento.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Cabezales de Pozo,SS 103,8,"Revestidores?
-Cabezal de pozo.?
-Árbol de Navidad.?
-Problemas Comunes & Soluciones ?
-Cabezal de Rotación ?
-.-Función ?
+ Preventive maintenance.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Optimización y Subsuelo​ (Monitoreo – Mantenimiento),SS 102,4,"Monitoreo de los Sistemas de Levantamiento Artificial. ​​
+Mantenimiento Preventivo y Correctivo de Sistemas de Levantamiento.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Cabezales de Pozo,SS 103,8,"Revestidores​
+Cabezal de pozo.​
+Árbol de Navidad.​
+Problemas Comunes & Soluciones ​
+Cabezal de Rotación ​
+.-Función ​
 .-Mantenimiento
-","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Conceptos Básicos de Química de Producción,SS 104,8,"Tipos de Químicos?
-Almacenamiento?
-Bombas Químicas?
-Consideraciones Ambientales y Regulaciones?
-Mantenimiento Preventivo","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Manejo de produccion de gas,SS 105,3,"Manejo de Gas desde el Pozo?
-Influencia del Gas en la Producción?
-Sistemas de Producción de Gas.?
-Redes de Gas?
-Ubicación de las Líneas de Gas.?
-Fiscalización y Balanceo de Gas.?
-Normativa.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Exploración de Petróleo y Gas,SS106,4,"Introducción a la Exploración de Petróleo y Gas?
-Métodos de Exploración de Petróleo y Gas?
-Uso de los Datos de Exploración?
-Exploración Sísmica?
-Geología en la Producción de Hidrocarburos?
-Perforación y Producción?
-Gestión de Campos Maduros y Avances Tecnológicos?
-Registros de Pozos y Evaluación de Formaciones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Perforación?,SS 107,4,"Geología?
-Registro de pozos?
-Terminación de pozos?
-Selección y degradación de materiales?
-Visitas al sitio de operaciones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Intervencion de pozos,SS 108,4,"Introducción a los reacondicionamientos?
-Intervención de pozos y técnicas clave?
-Métodos de diagnóstico para reacondicionamientos?
-Plataformas de reacondicionamiento?
-Reacondicionamientos sin plataforma?
-Bombas de extracción","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
-Subsuelo,SS,Pruebas de pozos,SS 109,4,"Tipos de Pruebas de Pozos?
-Manifolds?
-Separadores?
-Equipo de Prueba?
-Datos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Conceptos Básicos de Química de Producción,SS 104,8,"Tipos de Químicos​
+Almacenamiento​
+Bombas Químicas​
+Consideraciones Ambientales y Regulaciones​
+Mantenimiento Preventivo","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Manejo de produccion de gas,SS 105,3,"Manejo de Gas desde el Pozo​
+Influencia del Gas en la Producción​
+Sistemas de Producción de Gas.​
+Redes de Gas​
+Ubicación de las Líneas de Gas.​
+Fiscalización y Balanceo de Gas.​
+Normativa.","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Exploración de Petróleo y Gas,SS106,4,"Introducción a la Exploración de Petróleo y Gas​
+Métodos de Exploración de Petróleo y Gas​
+Uso de los Datos de Exploración​
+Exploración Sísmica​
+Geología en la Producción de Hidrocarburos​
+Perforación y Producción​
+Gestión de Campos Maduros y Avances Tecnológicos​
+Registros de Pozos y Evaluación de Formaciones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Perforación​,SS 107,4,"Geología​
+Registro de pozos​
+Terminación de pozos​
+Selección y degradación de materiales​
+Visitas al sitio de operaciones","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Intervencion de pozos,SS 108,4,"Introducción a los reacondicionamientos​
+Intervención de pozos y técnicas clave​
+Métodos de diagnóstico para reacondicionamientos​
+Plataformas de reacondicionamiento​
+Reacondicionamientos sin plataforma​
+Bombas de extracción","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
+Subsuelo,SS,Pruebas de pozos,SS 109,4,"Tipos de Pruebas de Pozos​
+Manifolds​
+Separadores​
+Equipo de Prueba​
+Datos","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 Subsuelo,SS,Introducción a la Ingeniería de Yacimientos,SS 110,4,"Conceptos básicos de ingeniería de reservorios
 Incertidumbres en Producción
-Perforación","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+Perforación","Operaciones, mantenimiento y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 "Seguridad, Higiene y Ambiente",HSE,"Atmosferas peligrosas y Sulfuro de Hidrogeno (H2S), Espacios Confinados",HSE 102,4,"Presencia
 Efectos sobre la salud
 Caracteristicas
@@ -397,23 +397,23 @@ Proteccion respiratoria
 Prueba de gas
 Espacios confinados: Requisitos
 Plan de rescate
-","Operaciones,  mantenimiento, SIHAO  y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,
+","Operaciones,  mantenimiento, SIHAO  y otros profesionales que requieren conocimientos para operar y mantener las instalaciones de manera segura y eficaz.",,,
 "Seguridad, Higiene y Ambiente",HSE,Análisis de riesgo en el trabajo (A.R.T) ,HSE 103,4,"Métodos de Análisis de Riesgo en el Trabajo (ART)
 Metodología Norma PDVSA IR-S-17 
-Proceso del Análisis de Riesgos en el Trabajo?
+Proceso del Análisis de Riesgos en el Trabajo​
 Responsabilidades
 Anexo A
-Actividad grupal","Operaciones,  mantenimiento y SIHAO",,
+Actividad grupal","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Sistema de Permisos de Trabajo,HSE 103,2,"Objetivos
 NORMA PDVSA IR-S-04
-Conceptos Básicos?
-Elementos del Sistema?
-Definición de Permisos ""en Frío ó en Caliente“","Operaciones,  mantenimiento y SIHAO",,
+Conceptos Básicos​
+Elementos del Sistema​
+Definición de Permisos ""en Frío ó en Caliente“","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Aislamiento de energías peligrosas - Bloqueo y etiquetado (LOTO),HSE 104,4,"Proceso de Control de Fuentes de Energía (LOTO) 
-Conceptos Básicos?
+Conceptos Básicos​
 Tipos de Dispositivos Bloqueo
 Roles y responsabilidades
-Componentes Claves","Operaciones,  mantenimiento y SIHAO",,
+Componentes Claves","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Trabajo en altura: escaleras y andamios y uso de arnes,HSE 105,5,"Seguridad en Escaleras Portatiles, Fijas
 Roles y responsabilidades
 Riesgos comunes
@@ -422,116 +422,116 @@ Anclajes
 Caida Libre
 VIT
 Inspeccion
-Andamios: tipos, partes, condiciones, montaje","Operaciones,  mantenimiento y SIHAO",,
+Andamios: tipos, partes, condiciones, montaje","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Salvaguardas ,HSE 105,2,"Concepto
 Bow Tie
 Modelo queso suizo
 Tipos de salvaguardas
-Actividad grupal","Operaciones,  mantenimiento y SIHAO",,
+Actividad grupal","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Trabajo eléctricos energizados y desenergizado,HSE 106,4,"Principios basicos
 Roles y responsabilidades
 Certificados
 Requisitos
 VIT
-Caso estudio","Operaciones,  mantenimiento y SIHAO",,
-"Seguridad, Higiene y Ambiente",HSE,Trabajo en caliente,HSE 107,2.5,"Conceptos Básicos?
+Caso estudio","Operaciones,  mantenimiento y SIHAO",,,
+"Seguridad, Higiene y Ambiente",HSE,Trabajo en caliente,HSE 107,2.5,"Conceptos Básicos​
 Normativa PDVSA
 Trabajo en Caliente con Llama Abierta y No Abierta
 Areas clasificadas
 Prueba de gas
-Certificados para Trabajos Especiales","Operaciones,  mantenimiento y SIHAO",,
-"Seguridad, Higiene y Ambiente",HSE,Excavación,HSE 108,4,"Excavación vs Zanja?
-Estándares de excavación de OSHA?
-Tipos de excavaciones?
+Certificados para Trabajos Especiales","Operaciones,  mantenimiento y SIHAO",,,
+"Seguridad, Higiene y Ambiente",HSE,Excavación,HSE 108,4,"Excavación vs Zanja​
+Estándares de excavación de OSHA​
+Tipos de excavaciones​
 Ubicación de líneas
-Preparación de la excavación para la entrada?","Operaciones,  mantenimiento y SIHAO",,
+Preparación de la excavación para la entrada​","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Izamiento de Cargas,HSE 109,4,"Tipos
 Equipos y Accesorios para Izaje de Cargas
-Documentos requeridos?
+Documentos requeridos​
 VIT 
-Requisitos de Levantamiento y Aparejamiento?
-Plan de Comunicación?
-Mitigaciones de Riesgos?","Operaciones,  mantenimiento y SIHAO",,
+Requisitos de Levantamiento y Aparejamiento​
+Plan de Comunicación​
+Mitigaciones de Riesgos​","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,HOP,HSE 110,1,"Conceptos 
-Principios HOP?",Todos,,
+Principios HOP​",Todos,,,
 "Seguridad, Higiene y Ambiente",HSE,Protección auditiva y golpe de calor,HSE 111,2,"Efectos del ruido
 Fuentes de ruido
 Tipos de Protección Auditiva
 Niveles de ruido
 Efectos Físicos y Mentales
 Índice de Calor
-Mantenerse Seguro en el Calor",Todos,,
-"Seguridad, Higiene y Ambiente",HSE,Reducción de huella de Carbono,HSE 112,2,"Protocolo de Kyoto??
-Gases Efecto Invernadero (GEI)?
-¿Qué son?, ¿Cuáles son??
-Calentamiento global y cambio climático?
-GEI detalles y características?
-¿Qué debe reportarse??
-Términos y definiciones??
-Fuentes de GEI en la industria?
-Consejos para reducir emisiones CO2",Todos,,
+Mantenerse Seguro en el Calor",Todos,,,
+"Seguridad, Higiene y Ambiente",HSE,Reducción de huella de Carbono,HSE 112,2,"Protocolo de Kyoto​​
+Gases Efecto Invernadero (GEI)​
+¿Qué son?, ¿Cuáles son?​
+Calentamiento global y cambio climático​
+GEI detalles y características​
+¿Qué debe reportarse?​
+Términos y definiciones​​
+Fuentes de GEI en la industria​
+Consejos para reducir emisiones CO2",Todos,,,
 "Seguridad, Higiene y Ambiente",HSE,Primeros Auxilios,HSE 113,3,"Introducción/conceptos básicos
 Emergencias respiratorias
 Emergencias por asfixia
 Emergencias del sistema nervioso
 Picaduras, extintores
-Emergencias del sistema nervioso",Todos,,
-"Seguridad, Higiene y Ambiente",HSE,Manejo de desechos,HSE 114,1,"Tipos de Residuos: Introducción?
-Residuos Peligrosos?
-Almacenamiento y Eliminación?
-Etiquetado de Residuos?","Operaciones,  mantenimiento y SIHAO",,
+Emergencias del sistema nervioso",Todos,,,
+"Seguridad, Higiene y Ambiente",HSE,Manejo de desechos,HSE 114,1,"Tipos de Residuos: Introducción​
+Residuos Peligrosos​
+Almacenamiento y Eliminación​
+Etiquetado de Residuos​","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Seguridad vehicular en el campo (MVS) ,HSE 115,4,"Seguridad del Conductor
 Manejo de Fatiga
-Seguridad en Vehículos Pesados",Todos,,
-Seguridad de procesos,PSM,Seguridad de Procesos para Operacion,HSE 202,8,"Identificación y Evaluación de Riesgos?
-Especificación de Barreras?
-Identificación de Tareas Críticas?
-Manejo del Cambio (MOC)?
-Roles y Responsabilidades?
-Inspección Basada en Riesgos (RBI)?
-Gestión de la Corrosión?
-Gestión de la Integridad de Oleoductos?
-Desarrollo de Programa de Integridad Mecánica?
-Análisis de Confiabilidad, Disponibilidad y Mantenibilidad (RAM)",Operaciones,,
-Seguridad de procesos,PSM,Seguridad de Procesos para Mantenimiento,HSE 203,8,"Inspecciones y Pruebas (ITPM)?
-Integridad de Activos?
-Desarrollo de un Programa de Integridad Mecánica?
-Desarrollo de Programas para Tuberías de Alta Energía?
-Fundamentos de Ingeniería Forense?
-Mecánica de la Fractura: Fundamentos y Aplicaciones?
-Ensayo No Destructivo (NDT) para Gerentes?
-Gestión de Integridad de Activos e Inspección Basada en el Riesgo?
-Capacidad Operativa (FFS) para la Integridad de Tuberías de Petróleo y Gas",Mantenimiento,,
-Seguridad de procesos,PSM,Seguridad de Procesos para HSE,HSE 204,4,"Revisión de Seguridad Previa al Inicio (PSSR)?
-Procedimientos Operativos",SIHAO,,
+Seguridad en Vehículos Pesados",Todos,,,
+Seguridad de procesos,PSM,Seguridad de Procesos para Operacion,HSE 202,8,"Identificación y Evaluación de Riesgos​
+Especificación de Barreras​
+Identificación de Tareas Críticas​
+Manejo del Cambio (MOC)​
+Roles y Responsabilidades​
+Inspección Basada en Riesgos (RBI)​
+Gestión de la Corrosión​
+Gestión de la Integridad de Oleoductos​
+Desarrollo de Programa de Integridad Mecánica​
+Análisis de Confiabilidad, Disponibilidad y Mantenibilidad (RAM)",Operaciones,,,
+Seguridad de procesos,PSM,Seguridad de Procesos para Mantenimiento,HSE 203,8,"Inspecciones y Pruebas (ITPM)​
+Integridad de Activos​
+Desarrollo de un Programa de Integridad Mecánica​
+Desarrollo de Programas para Tuberías de Alta Energía​
+Fundamentos de Ingeniería Forense​
+Mecánica de la Fractura: Fundamentos y Aplicaciones​
+Ensayo No Destructivo (NDT) para Gerentes​
+Gestión de Integridad de Activos e Inspección Basada en el Riesgo​
+Capacidad Operativa (FFS) para la Integridad de Tuberías de Petróleo y Gas",Mantenimiento,,,
+Seguridad de procesos,PSM,Seguridad de Procesos para HSE,HSE 204,4,"Revisión de Seguridad Previa al Inicio (PSSR)​
+Procedimientos Operativos",SIHAO,,,
 "Seguridad, Higiene y Ambiente",HSE,Investigacion de Accidentes,HSE 205,4,"Causa raíz
 ¿Qué pasaría si...?
 Cadena de comunicación y registro de incidentes
 Identificación e investigación de incidentes
-Acciones de mejora y lecciones aprendidas","Operaciones,  mantenimiento y SIHAO",,
-"Seguridad, Higiene y Ambiente",HSE,Sistema de comando de incidentes (ICS),HSE 206,4,"Sistema de Comando de Incidentes en Petróleo y Gas?
-Implementación del Sistema de Comando de Incidentes?
-Sistema de Comando de Incidentes en la Práctica?
-Beneficios del Sistema de Comando de Incidentes","Operaciones,  mantenimiento y SIHAO",,
-"Seguridad, Higiene y Ambiente",HSE,Arco Electrico,IHE 101,6,"¿Qué es un Arco Eléctrico??
-Elementos de Protección Personal para Trabajar Expuesto a Arco Eléctrico?
-Plan de Emergencia?
-Acciones Mitigativas cuando se Trabaja con Arco Eléctrico?
-Puntos clave a reforzar?
-","Operaciones,  mantenimiento y SIHAO",,
+Acciones de mejora y lecciones aprendidas","Operaciones,  mantenimiento y SIHAO",,,
+"Seguridad, Higiene y Ambiente",HSE,Sistema de comando de incidentes (ICS),HSE 206,4,"Sistema de Comando de Incidentes en Petróleo y Gas​
+Implementación del Sistema de Comando de Incidentes​
+Sistema de Comando de Incidentes en la Práctica​
+Beneficios del Sistema de Comando de Incidentes","Operaciones,  mantenimiento y SIHAO",,,
+"Seguridad, Higiene y Ambiente",HSE,Arco Electrico,IHE 101,6,"¿Qué es un Arco Eléctrico?​
+Elementos de Protección Personal para Trabajar Expuesto a Arco Eléctrico​
+Plan de Emergencia​
+Acciones Mitigativas cuando se Trabaja con Arco Eléctrico​
+Puntos clave a reforzar​
+","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Electricista calificado,IHE 101,16,"Estándares de Trabajo Seguro en la Industria Eléctrica
 Dos Estándares Eléctricos Aplicados (Prácticas Reconocidas)
 Peligros asociados con la Electricidad
 Interacción con Equipos Eléctricos
 Trabajo Eléctrico Seguro
-Política de Líneas Eléctricas Aéreas","Operaciones,  mantenimiento y SIHAO",,
+Política de Líneas Eléctricas Aéreas","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Supervisión de Trabajos en Altura,HSE 118,Por definir,"•	Planeación
 •	Calculo de Espacio de Caída Libre
 •	Metodología para Inspección de armado de andamios
 •	Criterio de descarte de equipo y accesorios para trabajos en Altura
 •	Auto rescate
 •	Gestión de Riesgos y Salvaguardas para trabajos en Altura
-•	Otros","Operaciones,  mantenimiento y SIHAO",,
+•	Otros","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Supervisión de Trabajos de excavación,HSE 119,Por definir,"•	Planeación
 •	Sistemas de protección para la excavación
 •	Diseño y Conformación de Taludes
@@ -539,31 +539,31 @@ Política de Líneas Eléctricas Aéreas","Operaciones,  mantenimiento y SIHAO",
 •	Determinación de zonas de exclusión
 •	Gestión de Riesgos y Salvaguardas para Excavación
 •	Verificación de resistencia del suelo
-•	Otros","Operaciones,  mantenimiento y SIHAO",,
+•	Otros","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Primeros Auxilios Nivel 2,HSE 120,Por definir,"•	Signos vitales
 •	RCP
 •	Manejo de Pacientes Politraumatizados
 •	Triaje
 •	Extricación
 •	Inmovilización y Traslado
-•	Otros","Operaciones,  mantenimiento y SIHAO",,
+•	Otros","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Supervisión de Trabajos eléctricos,HSE 121,Por definir,"•	Reglas de Oro 
 •	Criterios de desenergizado y Aislamiento
 •	Gestion de Emergencias Eléctricas
-•	Planeacion","Operaciones,  mantenimiento y SIHAO",,
+•	Planeacion","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Supervisión de Trabajos en espacios confinados,HSE 122,Por definir,"•	Medición de Atmosferas 
 •	Planeación
 •	Métodos de trabajo 
 •	Recursos
-•	Análisis de quipos de respiración y suplidores de aire","Operaciones,  mantenimiento y SIHAO",,
+•	Análisis de quipos de respiración y suplidores de aire","Operaciones,  mantenimiento y SIHAO",,,
 "Seguridad, Higiene y Ambiente",HSE,Gestión de Riesgos Nivel 2,HSE 123,Por definir,"•	Gestión de Peligros y Riesgos
 •	Clasificación de Áreas 
 •	Equipos de detección y medición
 •	Análisis de Salvaguardas (Bow Tie)
 •	Jerarquía de Controles
-•	Otros","Operaciones,  mantenimiento y SIHAO",,
-PDVSA Certificaciones,PDVCER,Combo SIHOA (Evaluación de Atmósferas Peligrosas),PDVCER 1,16,,,,
-PDVSA Certificaciones,PDVCER,Combo SIHOA (Espacios confinados),PDVCER 2,8,,,,
-PDVSA Certificaciones,PDVCER,Combo SIHOA (Sistema de permisos de trabajo),PDVCER 3,16,,,,
-PDVSA Certificaciones,PDVCER,Seguridad en la conducción de vehículos,PDVCER 4,16,,,,
-PDVSA Certificaciones,PDVCER,Manejo seguro del sulfuro de hidrogeno – H2S,PDVCER 6,8,,,,
+•	Otros","Operaciones,  mantenimiento y SIHAO",,,
+PDVSA Certificaciones,PDVCER,Combo SIHOA (Evaluación de Atmósferas Peligrosas),PDVCER 1,16,,,,,
+PDVSA Certificaciones,PDVCER,Combo SIHOA (Espacios confinados),PDVCER 2,8,,,,,
+PDVSA Certificaciones,PDVCER,Combo SIHOA (Sistema de permisos de trabajo),PDVCER 3,16,,,,,
+PDVSA Certificaciones,PDVCER,Seguridad en la conducción de vehículos,PDVCER 4,16,,,,,
+PDVSA Certificaciones,PDVCER,Manejo seguro del sulfuro de hidrogeno – H2S,PDVCER 6,8,,,,,
